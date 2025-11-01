@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="../../images/Logo.png" alt="Logo" />
+      </div>
+      <div class="login-box">
+        <h2>Sign in</h2>
+        <form>
+          <div class="input-group">
+            <label for="username">Your username</label>
+            <input type="text" id="username" placeholder="" required/>
+          </div>
+          <div class="input-group">
+            <label for="password">Your password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" required/>
+              <span class="toggle-password">Hide</span>
+            </div>
+          </div>
+          <button type="submit" class="login-btn-disabled">Log in</button>
+        </form>
+        <p class="terms">
+          By continuing, you agree to the <a href="#">Terms of use</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+        <a href="#" class="forgot-password">Forgot your password</a>
+        <hr/>
+        <p class="new-user">New to our community</p>
+        <button class="create-account-btn">Create an account</button>
+      </div>
+    </div>
+  </body>
+</html>
