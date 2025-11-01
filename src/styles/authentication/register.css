@@ -28,8 +28,8 @@ body {
   margin-bottom: 24px;
 }
 
-/* Caixa de login */
-.login-box {
+/* Caixa de register */
+.register-box {
   background: white;
   padding: 32px;
   border-radius: 16px;
@@ -37,7 +37,7 @@ body {
   text-align: left;
 }
 
-.login-box h2 {
+.register-box h2 {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
@@ -89,8 +89,8 @@ body {
   user-select: none;
 }
 
-/* Botão de login */
-.login-btn-disabled {
+/* Botão de register */
+.register-btn-disabled {
   width: 100%;
   padding: 12px;
   background-color: #ddd;
@@ -99,12 +99,12 @@ body {
   font-weight: 500;
   border: none;
   border-radius: 50px;
-  cursor: pointer;
+  cursor: not-allowed;
   margin: 8px 0 16px;
   transition: background-color 0.2s;
 }
 
-.login-btn-enabled {
+.register-btn-enabled {
   width: 100%;
   padding: 12px;
   background-color: #007bff;
@@ -118,9 +118,8 @@ body {
   transition: background-color 0.2s;
 }
 
-
-.login-btn:hover {
-  background-color: #ccc;
+.register-btn-enabled:hover {
+  background-color: #0056b3;
 }
 
 /* Termos e política */
@@ -138,55 +137,4 @@ body {
 
 .terms a:hover {
   text-decoration: underline;
-}
-
-/* Esqueceu a senha */
-.forgot-password {
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  color: #007bff;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
-}
-
-/* Linha divisória */
-hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 24px 0;
-}
-
-/* Novo utilizador*/
-.new-user {
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-/* Botão criar conta*/
-.create-account-btn {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background-color: transparent;
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  border: 1.5px solid #ddd;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-decoration: none;
-  text-align: center;
-}
-
-.create-account-btn:hover {
-  background-color: #f0f0f0;
-  border-color: #bbb;
 }
