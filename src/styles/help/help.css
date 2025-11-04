@@ -1,0 +1,432 @@
+/* Reset e Fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.menu h4,
+.others h4 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.menu ul,
+.others ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu a,
+.others a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  font-weight: 400;
+}
+
+.menu a:hover,
+.others a:hover {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.others a.active {
+  background-color: #ddd6fe;
+  color: #5b21b6;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 24px;
+  background-color: #f9f9fb;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.search-bar input::placeholder {
+  color: #9ca3af;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.95rem;
+}
+
+.user-profile span:first-child {
+  font-weight: 500;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.notification {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Welcome Section */
+.welcome h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.welcome p {
+  color: #4f46e5;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.steps-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.steps-card ol {
+  counter-reset: step;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.steps-card li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 40px;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.steps-card li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #eef2ff;
+  color: #4f46e5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.steps-card li span {
+  display: block;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.feature-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-card li {
+  font-size: 0.9rem;
+  color: #374151;
+  position: relative;
+  padding-left: 20px;
+}
+
+.feature-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+/* Responsividade Tablet */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 250px;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .welcome h1 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 16px;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo img {
+    max-width: 140px;
+  }
+
+  .menu, .others {
+    text-align: center;
+  }
+
+  .menu ul, .others ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .main-content {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar {
+    max-width: none;
+  }
+
+  .user-profile {
+    justify-content: space-between;
+  }
+
+  .welcome h1 {
+    font-size: 1.25rem;
+  }
+
+  .welcome p {
+    font-size: 0.9rem;
+  }
+
+  .steps-card {
+    padding: 20px;
+  }
+
+  .steps-card li {
+    font-size: 0.95rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsividade Extra Small */
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 100px;
+  }
+
+  .sidebar {
+    padding: 12px;
+    gap: 20px;
+  }
+
+  .menu a,
+  .others a {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .user-profile span:first-child {
+    font-size: 0.85rem;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .steps-card {
+    padding: 16px;
+  }
+
+  .steps-card li {
+    padding-left: 36px;
+    font-size: 0.9rem;
+  }
+
+  .steps-card li::before {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .feature-card p,
+  .feature-card li {
+    font-size: 0.85rem;
+  }
+}
