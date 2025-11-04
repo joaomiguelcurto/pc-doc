@@ -8,7 +8,136 @@
       "creation_date": "2025-09-30T14:28:00Z",
       "confirm_connect": true,
       "connection_code": "ABC123XYZ",
-      "last_update": "2025-09-30T14:28:00Z"
+      "last_update": "2025-09-30T14:28:00Z",
+      "computers": {
+        "pc001": {
+          "id_computer": "pc001",
+          "name": "Desktop-01",
+          "connection_code": "ABC123XYZ",
+          "last_update": "2025-09-30T14:28:00Z",
+          "status": "online",
+          "id_company": "company1",
+          "cpu": {
+            "id_cpu": "cpu_pc001",
+            "model": "Intel Core i7-12700K",
+            "usage": 45.2,
+            "data": {
+              "2025-09-30T14:00:00Z": 42.1,
+              "2025-09-30T14:15:00Z": 45.2,
+              "2025-09-30T14:28:00Z": 45.2
+            },
+            "id_computer": "pc001"
+          },
+          "gpus": [
+            {
+              "id_gpu": "gpu_pc001_1",
+              "model": "NVIDIA RTX 3080",
+              "usage": 60,
+              "data": {
+                "2025-09-30T14:00:00Z": 55,
+                "2025-09-30T14:15:00Z": 58,
+                "2025-09-30T14:28:00Z": 60
+              },
+              "id_computer": "pc001"
+            }
+          ],
+          "ram": {
+            "id_ram": "ram_pc001",
+            "capacity": 32,
+            "usage": 12.5,
+            "data": {
+              "2025-09-30T14:00:00Z": 11.8,
+              "2025-09-30T14:15:00Z": 12.3,
+              "2025-09-30T14:28:00Z": 12.5
+            },
+            "id_computer": "pc001"
+          },
+          "disks": [
+            {
+              "id_disk": "disk_pc001_1",
+              "name": "SSD_C",
+              "capacity": 512,
+              "usage": 80,
+              "data": {
+                "2025-09-30T14:00:00Z": 75,
+                "2025-09-30T14:15:00Z": 78,
+                "2025-09-30T14:28:00Z": 80
+              },
+              "id_computer": "pc001"
+            },
+            {
+              "id_disk": "disk_pc001_2",
+              "name": "HDD_D",
+              "capacity": 2000,
+              "usage": 20,
+              "data": {
+                "2025-09-30T14:00:00Z": 18,
+                "2025-09-30T14:15:00Z": 19,
+                "2025-09-30T14:28:00Z": 20
+              },
+              "id_computer": "pc001"
+            }
+          ]
+        },
+
+        "pc002": {
+          "id_computer": "pc002",
+          "name": "Laptop-01",
+          "connection_code": "DEF456UVW",
+          "last_update": "2025-09-30T14:28:00Z",
+          "status": "online",
+          "id_company": "company1",
+          "cpu": {
+            "id_cpu": "cpu_pc002",
+            "model": "AMD Ryzen 5 5600U",
+            "usage": 30,
+            "data": {
+              "2025-09-30T14:00:00Z": 28,
+              "2025-09-30T14:15:00Z": 29,
+              "2025-09-30T14:28:00Z": 30
+            },
+            "id_computer": "pc002"
+          },
+          "gpus": [
+            {
+              "id_gpu": "gpu_pc002_1",
+              "model": "Integrated AMD Radeon",
+              "usage": 15,
+              "data": {
+                "2025-09-30T14:00:00Z": 12,
+                "2025-09-30T14:15:00Z": 14,
+                "2025-09-30T14:28:00Z": 15
+              },
+              "id_computer": "pc002"
+            }
+          ],
+          "ram": {
+            "id_ram": "ram_pc002",
+            "capacity": 16,
+            "usage": 8,
+            "data": {
+              "2025-09-30T14:00:00Z": 7.5,
+              "2025-09-30T14:15:00Z": 7.8,
+              "2025-09-30T14:28:00Z": 8
+            },
+            "id_computer": "pc002"
+          },
+          "disks": [
+            {
+              "id_disk": "disk_pc002_1",
+              "name": "SSD_C",
+              "capacity": 256,
+              "usage": 50,
+              "data": {
+                "2025-09-30T14:00:00Z": 45,
+                "2025-09-30T14:15:00Z": 48,
+                "2025-09-30T14:28:00Z": 50
+              },
+              "id_computer": "pc002"
+            }
+          ]
+        }
+      }
     }
   },
 
@@ -53,139 +182,6 @@
       "id_user": "user_uid_2",
       "id_computer": "pc001",
       "id_company": "company1"
-    }
-  },
-
-  "computers": {
-    "pc001": {
-      "id_computer": "pc001",
-      "name": "Desktop-01",
-      "connection_code": "ABC123XYZ",
-      "last_update": "2025-09-30T14:28:00Z",
-      "status": "online",
-      "id_company": "company1"
-    },
-    "pc002": {
-      "id_computer": "pc002",
-      "name": "Laptop-01",
-      "connection_code": "DEF456UVW",
-      "last_update": "2025-09-30T14:28:00Z",
-      "status": "online",
-      "id_company": "company1"
-    }
-  },
-
-  "cpu": {
-    "cpu_pc001": {
-      "id_cpu": "cpu_pc001",
-      "model": "Intel Core i7-12700K",
-      "usage": 45.2,
-      "data": {
-        "2025-09-30T14:00:00Z": 42.1,
-        "2025-09-30T14:15:00Z": 45.2,
-        "2025-09-30T14:28:00Z": 45.2
-      },
-      "id_computer": "pc001"
-    },
-    "cpu_pc002": {
-      "id_cpu": "cpu_pc002",
-      "model": "AMD Ryzen 5 5600U",
-      "usage": 30,
-      "data": {
-        "2025-09-30T14:00:00Z": 28,
-        "2025-09-30T14:15:00Z": 29,
-        "2025-09-30T14:28:00Z": 30
-      },
-      "id_computer": "pc002"
-    }
-  },
-
-  "gpu": {
-    "gpu_pc001_1": {
-      "id_gpu": "gpu_pc001_1",
-      "model": "NVIDIA RTX 3080",
-      "usage": 60,
-      "data": {
-        "2025-09-30T14:00:00Z": 55,
-        "2025-09-30T14:15:00Z": 58,
-        "2025-09-30T14:28:00Z": 60
-      },
-      "id_computer": "pc001"
-    },
-    "gpu_pc002_1": {
-      "id_gpu": "gpu_pc002_1",
-      "model": "Integrated AMD Radeon",
-      "usage": 15,
-      "data": {
-        "2025-09-30T14:00:00Z": 12,
-        "2025-09-30T14:15:00Z": 14,
-        "2025-09-30T14:28:00Z": 15
-      },
-      "id_computer": "pc002"
-    }
-  },
-
-  "ram": {
-    "ram_pc001": {
-      "id_ram": "ram_pc001",
-      "capacity": 32,
-      "usage": 12.5,
-      "data": {
-        "2025-09-30T14:00:00Z": 11.8,
-        "2025-09-30T14:15:00Z": 12.3,
-        "2025-09-30T14:28:00Z": 12.5
-      },
-      "id_computer": "pc001"
-    },
-    "ram_pc002": {
-      "id_ram": "ram_pc002",
-      "capacity": 16,
-      "usage": 8,
-      "data": {
-        "2025-09-30T14:00:00Z": 7.5,
-        "2025-09-30T14:15:00Z": 7.8,
-        "2025-09-30T14:28:00Z": 8
-      },
-      "id_computer": "pc002"
-    }
-  },
-
-  "disk": {
-    "disk_pc001_1": {
-      "id_disk": "disk_pc001_1",
-      "name": "SSD_C",
-      "capacity": 512,
-      "usage": 80,
-      "data": {
-        "2025-09-30T14:00:00Z": 75,
-        "2025-09-30T14:15:00Z": 78,
-        "2025-09-30T14:28:00Z": 80
-      },
-      "id_computer": "pc001"
-    },
-    "disk_pc001_2": {
-      "id_disk": "disk_pc001_2",
-      "name": "HDD_D",
-      "capacity": 2000,
-      "usage": 20,
-      "data": {
-        "2025-09-30T14:00:00Z": 18,
-        "2025-09-30T14:15:00Z": 19,
-        "2025-09-30T14:28:00Z": 20
-      },
-      "id_computer": "pc001"
-    },
-    "disk_pc002_1": {
-      "id_disk": "disk_pc002_1",
-      "name": "SSD_C",
-      "capacity": 256,
-      "usage": 50,
-      "data": {
-        "2025-09-30T14:00:00Z": 45,
-        "2025-09-30T14:15:00Z": 48,
-        "2025-09-30T14:28:00Z": 50
-      },
-      "id_computer": "pc002"
     }
   }
 }
