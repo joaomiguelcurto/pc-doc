@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PCDoc - Dashboard</title>
+  <link rel="stylesheet" href="../styles/help/help.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="/pc-doc/images/LogoPcDoc.png" alt="PCDoc Logo" />
+      </div>
+
+      <nav class="menu">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/dashboard.png"> Dashboard</a></li>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/computer.png"> Manage Devices</a></li>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/usuarios.png"> Manage Users</a></li>
+        </ul>
+      </nav>
+
+      <nav class="others">
+        <h4>OTHERS</h4>
+        <ul>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/definicoes.png"> Settings</a></li>
+          <li><a href="#"><img class="active icon" src="/pc-doc/images/help.png"> Help</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <!-- Cabeçalho -->
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search PC " />
+          <span><img class="search-icon" src="/pc-doc/images/procurar.png"></span>
+        </div>
+        <div class="user-profile">
+          <span>R Renova</span>
+          <div class="avatar">👤</div>
+          <!-- <span class="notification">🔔</span> -->
+        </div>
+      </header>
+
+      <!-- Secção de boas-vindas -->
+      <section class="welcome">
+        <h1>Welcome to PCDoc</h1>
+        <p>Follow these steps to get the most out of PCDoc</p>
+
+        <div class="steps-card">
+          <ol>
+            <li>Connect a new device<br><span>Connect a new device to start managing it.</span></li>
+            <li>Supervision of each device<br><span>Monitor each device connected to your account</span></li>
+            <li>Create reports<br><span>Create reports of the problems encountered</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Secção de recursos -->
+      <section class="features">
+        <div class="feature-card">
+          <h3>🖥️ System Monitoring</h3>
+          <p>Keep track of your PC's performance and health</p>
+          <ul>
+            <li>Real-time system performance monitoring</li>
+            <li>CPU, memory, and disk usage tracking</li>
+            <li>Temperature monitoring and alerts</li>
+            <li>Network activity analysis</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>📑 Report Management</h3>
+          <p>Organize and manage your reports</p>
+          <ul>
+            <li>Generate a basic system report</li>
+            <li>View and save the generated reports</li>
+            <li>Check report details (e.g., system performance data)</li>
+            <li>Delete or archive old reports</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
