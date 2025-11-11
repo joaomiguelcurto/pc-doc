@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCDoc - Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard/dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="/pc-doc/images/LogoPcDoc.png" alt="PCDoc Logo" />
+        </div>
+
+        <nav class="menu">
+          <h4>MENU</h4>
+          <ul>
+            <li>
+              <a href="#" class="active"
+                ><img class="icon" src="/pc-doc/images/dashboard.png" alt="" />
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img class="icon" src="/pc-doc/images/computer.png" alt="" />
+                Manage Devices</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img class="icon" src="/pc-doc/images/usuarios.png" alt="" />
+                Manage Users</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="others">
+          <h4>OTHERS</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><img class="icon" src="/pc-doc/images/definicoes.png" alt="" />
+                Settings</a
+              >
+            </li>
+            <li>
+              <a href="../help/help.html"
+                ><img class="icon" src="/pc-doc/images/help.png" alt="" />
+                Help</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="search-bar">
+            <input type="text" placeholder="Search PC " />
+            <img
+              class="search-icon"
+              src="/pc-doc/images/procurar.png"
+              alt="Search"
+            />
+          </div>
+          <div class="user-profile">
+            <div class="avatar-initials">R</div>
+            <span>Renova</span>
+            <div class="avatar"><i class="fas fa-chevron-down"></i></div>
+          </div>
+        </header>
+
+        <section class="dashboard">
+          <h1 class="dashboard-title">Dashboard</h1>
+          
+          <div class="top-row-grid">
+            <div class="chart-card memory-chart">
+              <div class="card-header-info">
+                <div class="device-info">
+                  <h2 class="device-name">PC0-01</h2>
+                  <p class="subtitle">Memória</p>
+                  <p class="description">Memory usage and allocation overview.</p>
+                </div>
+                <button class="btn-outline">View Report</button>
+              </div>
+
+              <div class="chart-wrapper dual-bar-chart">
+                <div class="bar-group">
+                  <div class="bar light" style="height: 65%"></div>
+                  <div class="bar dark" style="height: 75%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 55%"></div>
+                  <div class="bar dark" style="height: 80%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 85%"></div>
+                  <div class="bar dark" style="height: 90%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 78%"></div>
+                  <div class="bar dark" style="height: 60%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 70%"></div>
+                  <div class="bar dark" style="height: 82%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 88%"></div>
+                  <div class="bar dark" style="height: 50%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 65%"></div>
+                  <div class="bar dark" style="height: 75%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 55%"></div>
+                  <div class="bar dark" style="height: 80%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 85%"></div>
+                  <div class="bar dark" style="height: 90%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 78%"></div>
+                  <div class="bar dark" style="height: 60%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 70%"></div>
+                  <div class="bar dark" style="height: 82%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 88%"></div>
+                  <div class="bar dark" style="height: 50%"></div>
+                </div>
+              </div>
+
+              <div class="x-labels">
+                <span>01</span><span>02</span><span>03</span><span>04</span
+                ><span>05</span><span>06</span><span>07</span><span>08</span
+                ><span>09</span><span>10</span><span>11</span><span>12</span>
+              </div>
+              <div class="legend">
+                <div class="legend-item">
+                  <div class="legend-color dark"></div>
+                  Last 6 days
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color light"></div>
+                  Last Week
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-card status-card">
+              <div class="status-header">
+                <p class="status-label">Status</p>
+                <button class="btn-outline">View Report</button>
+              </div>
+              <p class="status-online">Real time.</p>
+              
+              <div class="status-icon-wrapper">
+                <img src="/pc-doc/images/status.png" alt="Status icon" class="plug-icon" />
+              </div>
+
+              <div class="status-legend-standalone">
+                <div class="status-item">
+                  <span class="dot online"></span> Online
+                </div>
+                <div class="status-item">
+                  <span class="dot offline"></span> Offline
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lower-row">
+            <div class="chart-card cpu-chart">
+              <h3 class="chart-title">CPU</h3>
+              <p class="chart-desc">
+                Processor usage and performance in real time.
+              </p>
+              <div class="chart-wrapper dual-bar-chart">
+                <div class="bar-group">
+                  <div class="bar light" style="height: 60%"></div>
+                  <div class="bar dark" style="height: 70%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 50%"></div>
+                  <div class="bar dark" style="height: 80%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 90%"></div>
+                  <div class="bar dark" style="height: 75%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 85%"></div>
+                  <div class="bar dark" style="height: 55%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 65%"></div>
+                  <div class="bar dark" style="height: 75%"></div>
+                </div>
+                 <div class="bar-group">
+                  <div class="bar light" style="height: 60%"></div>
+                  <div class="bar dark" style="height: 70%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 50%"></div>
+                  <div class="bar dark" style="height: 80%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 90%"></div>
+                  <div class="bar dark" style="height: 75%"></div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar light" style="height: 85%"></div>
+                  <div class="bar dark" style="height: 55%"></div>
+                </div>
+              </div>
+              <div class="x-labels">
+                  <span>01</span><span>02</span><span>03</span><span>04</span
+                  ><span>05</span><span>06</span><span>07</span><span>08</span
+                  ><span>09</span>
+              </div>
+            </div>
+
+            <div class="metric-card disks-card">
+              <h3 class="chart-title">Discos</h3>
+              <p class="chart-desc">Storage space available per unit.</p>
+              <div class="disk-item">
+                <span class="disk-label">Disk 0 (C:)</span>
+                <span class="disk-value">211.4GB/512GB</span>
+              </div>
+              <div class="disk-item">
+                <span class="disk-label">Disk 1 (D:)</span>
+                <span class="disk-value">760.1GB/1024GB</span>
+              </div>
+            </div>
+
+            <div class="chart-card gpu-chart">
+              <div class="card-header-info">
+                  <h3 class="chart-title">GPU</h3>
+                  <button class="btn-outline">View Report</button>
+              </div>
+              <p class="chart-desc">GPU usage and performance in real time.</p>
+              <div class="line-chart">
+                <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                  <polyline
+                    fill="none"
+                    stroke="#4f46e5"
+                    stroke-width="2"
+                    points="0,80 60,40 120,60 180,30 240,90 300,60"
+                  />
+                </svg>
+              </div>
+              <div class="x-labels">
+                <span>01</span><span>02</span><span>03</span><span>04</span
+                ><span>05</span><span>06</span>
+              </div>
+              <div class="legend-gpu">
+                  <div class="legend-item">
+                    <div class="legend-color dark dot-style"></div>
+                    Usage
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
