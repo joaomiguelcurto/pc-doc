@@ -1,115 +1,141 @@
 {
   "companies": {
     "company1": {
-      "company_name": "Empresa1",
+      "id_company": "company1",
+      "name": "Empresa1",
       "username": "admin_empresa1",
       "password": "senha123",
-      "created_at": "2025-09-30T14:28:00Z",
-      "last_updated": "2025-09-30T14:28:00Z",
+      "creation_date": "2025-09-30T14:28:00Z",
+      "confirm_connect": true,
+      "connection_code": "ABC123XYZ",
+      "last_update": "2025-09-30T14:28:00Z",
       "computers": {
         "pc001": {
-          "computer_name": "Desktop-01",
+          "id_computer": "pc001",
+          "name": "Desktop-01",
+          "connection_code": "ABC123XYZ",
+          "last_update": "2025-09-30T14:28:00Z",
+          "status": "online",
+          "id_company": "company1",
           "cpu": {
+            "id_cpu": "cpu_pc001",
             "model": "Intel Core i7-12700K",
             "usage": 45.2,
             "data": {
               "2025-09-30T14:00:00Z": 42.1,
               "2025-09-30T14:15:00Z": 45.2,
               "2025-09-30T14:28:00Z": 45.2
-            }
-          },
-          "disks": [
-            {
-              "active_time": 80,
-              "max_capacity": 512,
-              "name": "SSD_C",
-              "data": {
-                "2025-09-30T14:00:00Z": 75,
-                "2025-09-30T14:15:00Z": 78,
-                "2025-09-30T14:28:00Z": 80
-              }
             },
-            {
-              "active_time": 20,
-              "max_capacity": 2000,
-              "name": "HDD_D",
-              "data": {
-                "2025-09-30T14:00:00Z": 18,
-                "2025-09-30T14:15:00Z": 19,
-                "2025-09-30T14:28:00Z": 20
-              }
-            }
-          ],
+            "id_computer": "pc001"
+          },
           "gpus": [
             {
+              "id_gpu": "gpu_pc001_1",
               "model": "NVIDIA RTX 3080",
               "usage": 60,
               "data": {
                 "2025-09-30T14:00:00Z": 55,
                 "2025-09-30T14:15:00Z": 58,
                 "2025-09-30T14:28:00Z": 60
-              }
+              },
+              "id_computer": "pc001"
             }
           ],
-          "last_updated": "2025-09-30T14:28:00Z",
           "ram": {
-            "max": 32,
-            "used": 12.5,
+            "id_ram": "ram_pc001",
+            "capacity": 32,
+            "usage": 12.5,
             "data": {
               "2025-09-30T14:00:00Z": 11.8,
               "2025-09-30T14:15:00Z": 12.3,
               "2025-09-30T14:28:00Z": 12.5
-            }
+            },
+            "id_computer": "pc001"
           },
-          "status": "online",
-          "company_id": "company1"
+          "disks": [
+            {
+              "id_disk": "disk_pc001_1",
+              "name": "SSD_C",
+              "capacity": 512,
+              "usage": 80,
+              "data": {
+                "2025-09-30T14:00:00Z": 75,
+                "2025-09-30T14:15:00Z": 78,
+                "2025-09-30T14:28:00Z": 80
+              },
+              "id_computer": "pc001"
+            },
+            {
+              "id_disk": "disk_pc001_2",
+              "name": "HDD_D",
+              "capacity": 2000,
+              "usage": 20,
+              "data": {
+                "2025-09-30T14:00:00Z": 18,
+                "2025-09-30T14:15:00Z": 19,
+                "2025-09-30T14:28:00Z": 20
+              },
+              "id_computer": "pc001"
+            }
+          ]
         },
+
         "pc002": {
-          "computer_name": "Laptop-01",
+          "id_computer": "pc002",
+          "name": "Laptop-01",
+          "connection_code": "DEF456UVW",
+          "last_update": "2025-09-30T14:28:00Z",
+          "status": "online",
+          "id_company": "company1",
           "cpu": {
+            "id_cpu": "cpu_pc002",
             "model": "AMD Ryzen 5 5600U",
             "usage": 30,
             "data": {
               "2025-09-30T14:00:00Z": 28,
               "2025-09-30T14:15:00Z": 29,
               "2025-09-30T14:28:00Z": 30
-            }
+            },
+            "id_computer": "pc002"
           },
-          "disks": [
-            {
-              "active_time": 50,
-              "max_capacity": 256,
-              "name": "SSD_C",
-              "data": {
-                "2025-09-30T14:00:00Z": 45,
-                "2025-09-30T14:15:00Z": 48,
-                "2025-09-30T14:28:00Z": 50
-              }
-            }
-          ],
           "gpus": [
             {
+              "id_gpu": "gpu_pc002_1",
               "model": "Integrated AMD Radeon",
               "usage": 15,
               "data": {
                 "2025-09-30T14:00:00Z": 12,
                 "2025-09-30T14:15:00Z": 14,
                 "2025-09-30T14:28:00Z": 15
-              }
+              },
+              "id_computer": "pc002"
             }
           ],
-          "last_updated": "2025-09-30T14:28:00Z",
           "ram": {
-            "max": 16,
-            "used": 8,
+            "id_ram": "ram_pc002",
+            "capacity": 16,
+            "usage": 8,
             "data": {
               "2025-09-30T14:00:00Z": 7.5,
               "2025-09-30T14:15:00Z": 7.8,
               "2025-09-30T14:28:00Z": 8
-            }
+            },
+            "id_computer": "pc002"
           },
-          "status": "online",
-          "company_id": "company1"
+          "disks": [
+            {
+              "id_disk": "disk_pc002_1",
+              "name": "SSD_C",
+              "capacity": 256,
+              "usage": 50,
+              "data": {
+                "2025-09-30T14:00:00Z": 45,
+                "2025-09-30T14:15:00Z": 48,
+                "2025-09-30T14:28:00Z": 50
+              },
+              "id_computer": "pc002"
+            }
+          ]
         }
       }
     }
@@ -117,38 +143,45 @@
 
   "users": {
     "user_uid_1": {
-      "full_name": "Utilizador Exemplo 1",
-      "email": "user1@empresa1.com",
+      "id_user": "user_uid_1",
+      "name": "Utilizador Exemplo 1",
+      "email_address": "user1@empresa1.com",
       "username": "user1_empresa1",
       "password": "hashed_password_1",
-      "company_id": "company1",
       "status": "active",
-      "created_at": "2025-10-21T10:00:00Z"
+      "creation_date": "2025-10-21T10:00:00Z",
+      "id_company": "company1"
     },
     "user_uid_2": {
-      "full_name": "Utilizador Exemplo 2",
-      "email": "user2@empresa1.com",
+      "id_user": "user_uid_2",
+      "name": "Utilizador Exemplo 2",
+      "email_address": "user2@empresa1.com",
       "username": "user2_empresa1",
       "password": "hashed_password_2",
-      "company_id": "company1",
       "status": "inactive",
-      "created_at": "2025-10-21T10:01:00Z"
+      "creation_date": "2025-10-21T10:01:00Z",
+      "id_company": "company1"
     }
   },
 
   "user_permissions": {
-    "user_uid_1": {
-      "company_id": "company1",
-      "access": {
-        "pc001": true,
-        "pc002": true
-      }
+    "perm_1": {
+      "id_user_permission": "perm_1",
+      "id_user": "user_uid_1",
+      "id_computer": "pc001",
+      "id_company": "company1"
     },
-    "user_uid_2": {
-      "company_id": "company1",
-      "access": {
-        "pc001": true
-      }
+    "perm_2": {
+      "id_user_permission": "perm_2",
+      "id_user": "user_uid_1",
+      "id_computer": "pc002",
+      "id_company": "company1"
+    },
+    "perm_3": {
+      "id_user_permission": "perm_3",
+      "id_user": "user_uid_2",
+      "id_computer": "pc001",
+      "id_company": "company1"
     }
   }
 }
