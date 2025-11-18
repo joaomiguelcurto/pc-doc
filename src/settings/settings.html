@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PCDoc - Dashboard</title>
+  <link rel="stylesheet" href="../styles/settings/settings.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
+
+</head>
+<body>
+  <div class="container">
+    <!-- Barra Lateral -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../images/LogoPcDoc.png" alt="PCDoc Logo" />
+      </div>
+
+      <nav class="menu">
+        <h4>MENU</h4>
+        <ul>
+          <li><a href="../dashboard/dashboard.html"><img class="icon" src="/pc-doc/images/dashboard.png"> Dashboard</a></li>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/computer.png"> Manage Devices</a></li>
+          <li><a href="../manage-users/manage-users.html"><img class="icon" src="/pc-doc/images/usuarios.png"> Manage Users</a></li>
+        </ul>
+      </nav>
+
+      <nav class="others">
+        <h4>OTHERS</h4>
+        <ul>
+          <li><a href="#"><img class="icon" src="../../images/definicoes.png"> Settings</a></li>
+          <li><a class="active" href="../help/help.html"><img class="icon" src="../../images/help.png"> Help</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <!-- Cabeçalho -->
+      <header class="header">
+          <div class="search-bar">
+            <input type="text" placeholder="Search PC " />
+            <img
+              class="search-icon"
+              src="/pc-doc/images/procurar.png"
+              alt="Search"
+            />
+          </div>
+          <div class="user-profile">
+            <div class="avatar-initials">R</div>
+            <span>Renova</span>
+            <div class="avatar"><span class="material-symbols-outlined">stat_minus_1</span></div>
+          </div>
+        </header>
+
+       <section class="account-content">
+        <h2 class="account-title">Account</h2>
+        <p class="account-subtitle">Manage computers and users for Renova</p>
+
+        <div class="account-details-card">
+          <div class="account-field">
+            <input type="text" value="Renova" class="account-input" readonly>
+            <button class="edit-button" aria-label="Edit Account Name">
+              <span class="material-symbols-outlined edit-icon">edit</span>
+              </button>
+          </div>
+          <div class="account-field">
+            <input type="password" value="**********" class="account-input" readonly>
+            <button class="edit-button" aria-label="Edit Password">
+              <span class="material-symbols-outlined edit-icon">edit</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="account-actions">
+          <button class="select-pc-button">
+            Select a PC <span class="material-symbols-outlined">expand_more</span>
+            </button>
+          <button class="dashboard-button">Visit Dashboard</button>
+          <button class="delete-pc-button">Delete PC</button>
+        </div>
+
+        <div class="confirmation-section">
+          <div class="confirmation-group">
+            <h3>CONFIRMATION TO CONNECT PC</h3>
+            <div class="radio-options">
+              <label>
+                <input type="radio" name="security" value="on" checked>
+                On
+              </label>
+              <label>
+                <input type="radio" name="security" value="off">
+                Off
+              </label>
+            </div>
+          </div>
+          <div class="confirmation-group browser-group">
+            <h3>NOTIFICATIONS</h3>
+            <div class="radio-options">
+              <label>
+                <input type="radio" name="browser" value="on">
+                On
+              </label>
+              <label>
+                <input type="radio" name="browser" value="off" checked>
+                Off
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="delete-account-section">
+          <h3 class="delete-title">DELETE ACCOUNT</h3>
+          <p>Would you like to delete your PCDoc account: **Renova**?</p>
+          <p>This account contains **4 PCs**. Deleting your account will remove all of your connections and data associated with it.</p>
+          <a href="#" class="delete-link">I want to delete my account</a>
+        </div>
+      </section>
+      
+    </main>
+  </div>
+  <script src="../scripts/help/help.js"></script>
+</body>
+</html>

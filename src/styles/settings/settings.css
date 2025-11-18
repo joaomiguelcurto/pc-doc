@@ -174,120 +174,212 @@ body {
   cursor: pointer;
 }
 
-/* Welcome Section */
-.welcome h1 {
+.account-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.welcome p {
-  color: #4f46e5;
+.account-subtitle {
+  color: #6b7280;
   font-size: 0.95rem;
   margin-bottom: 24px;
 }
 
-.steps-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
+/* Card de Detalhes da Conta (Nome e Senha) */
+.account-details-card {
+  background-color: #f7f7f9; 
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 450px; 
+  margin-bottom: 20px;
+  /* Corrigido: Cor de fundo na imagem é mais escura/sólida */
+  background-color: #556080;
+  border: 1px solid #556080;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.steps-card ol {
-  counter-reset: step;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.steps-card li {
-  counter-increment: step;
-  position: relative;
-  padding-left: 40px;
-  font-size: 1rem;
-  color: #1f2937;
-}
-
-.steps-card li::before {
-  content: counter(step);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 28px;
-  height: 28px;
-  background-color: #eef2ff;
-  color: #4f46e5;
-  border-radius: 50%;
+.account-field {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: 600;
+  margin-bottom: 12px;
+  background-color: #747d9b; /* Fundo mais claro para os campos dentro do card */
+  border-radius: 4px;
+}
+
+.account-field:last-child {
+  margin-bottom: 0;
+}
+
+.account-input {
+  flex-grow: 1;
+  padding: 10px 12px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: white; /* Corrigido: Texto branco nos campos */
+  font-weight: 500;
+  cursor: default; 
+}
+
+.edit-button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex; /* Para centralizar o ícone */
+  align-items: center;
+}
+
+.edit-icon {
+  font-size: 1.1rem;
+  color: #d1d5db; /* Corrigido: Ícone de lápis mais claro */
+  opacity: 1; 
+}
+
+/* Ações da Conta (Select PC, Dashboard, Delete PC) */
+.account-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.select-pc-button, .dashboard-button, .delete-pc-button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1; /* Garante que o texto e o ícone fiquem alinhados */
+}
+
+.select-pc-button {
+  background-color: #4f46e5;
+  color: white;
+  border: 1px solid #4f46e5;
+}
+
+.select-pc-button:hover {
+  background-color: #4338ca;
+}
+
+.select-pc-button .material-symbols-outlined {
+    font-size: 1.2rem;
+}
+
+.dashboard-button, .delete-pc-button {
+  background-color: white; /* Corrigido: Botões brancos */
+  color: #374151;
+  border: 1px solid #d1d5db; /* Corrigido: Borda sutil */
+}
+
+.dashboard-button:hover, .delete-pc-button:hover {
+  background-color: #f9fafb;
+}
+
+/* Seções de Confirmação e Notificações (Rádios) */
+.confirmation-section {
+  display: flex;
+  gap: 80px; 
+  margin-bottom: 32px;
+  padding: 16px 0; 
+}
+
+.confirmation-group h3 {
+  font-size: 0.7rem; /* Corrigido: Tamanho menor para a fonte */
+  font-weight: 500;
+  color: #9ca3af;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em; /* Adicionado para se parecer com a imagem */
+}
+
+.radio-options {
+  display: flex;
+  gap: 16px;
   font-size: 0.9rem;
 }
 
-.steps-card li span {
-  display: block;
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-top: 4px;
-}
-
-/* Features Section */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 32px;
-}
-
-.feature-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
-}
-
-.feature-card h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 8px;
+.radio-options label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  color: #374151;
+  cursor: pointer;
 }
 
-.feature-card p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 16px;
+/* Estilização Customizada dos Rádios */
+.radio-options input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px; /* Tamanho ajustado */
+  height: 16px;
+  border: 2px solid #9ca3af; /* Cor da borda cinza padrão */
+  border-radius: 50%;
+  margin-right: 6px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
 }
 
-.feature-card ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.radio-options input[type="radio"]:checked {
+  border-color: #4f46e5; /* Borda azul ao selecionar */
+  background-color: white;
 }
 
-.feature-card li {
+.radio-options input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  background: #4f46e5; /* Ponto central azul */
+  border-radius: 50%;
+}
+
+/* DELETE ACCOUNT Section */
+.delete-account-section {
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb; 
+  margin-top: 32px; /* Adiciona espaço acima da linha */
+}
+
+.delete-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ef4444; 
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.delete-account-section p {
   font-size: 0.9rem;
   color: #374151;
-  position: relative;
-  padding-left: 20px;
+  margin-bottom: 8px;
 }
 
-.feature-card li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
+.delete-account-section p strong {
+  font-weight: 700;
+}
+
+.delete-link {
   color: #4f46e5;
-  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.delete-link:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade Tablet */
@@ -431,5 +523,12 @@ body {
   .feature-card p,
   .feature-card li {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .confirmation-section {
+    flex-direction: column;
+    gap: 20px;
   }
 }

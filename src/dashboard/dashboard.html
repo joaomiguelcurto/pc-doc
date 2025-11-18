@@ -9,60 +9,34 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
+
   </head>
   <body>
     <div class="container">
       <aside class="sidebar">
-        <div class="logo">
-          <img src="/pc-doc/images/LogoPcDoc.png" alt="PCDoc Logo" />
-        </div>
+      <div class="logo">
+        <img src="../../images/LogoPcDoc.png" alt="PCDoc Logo" />
+      </div>
 
-        <nav class="menu">
-          <h4>MENU</h4>
-          <ul>
-            <li>
-              <a href="#" class="active"
-                ><img class="icon" src="/pc-doc/images/dashboard.png" alt="" />
-                Dashboard</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img class="icon" src="/pc-doc/images/computer.png" alt="" />
-                Manage Devices</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img class="icon" src="/pc-doc/images/usuarios.png" alt="" />
-                Manage Users</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <nav class="menu">
+        <h4>MENU</h4>
+        <ul>
+          <li><a class="active" href="../dashboard/dashboard.html"><img class="icon" src="/pc-doc/images/dashboard.png"> Dashboard</a></li>
+          <li><a href="#"><img class="icon" src="/pc-doc/images/computer.png"> Manage Devices</a></li>
+          <li><a href="../manage-users/manage-users.html"><img class="icon" src="/pc-doc/images/usuarios.png"> Manage Users</a></li>
+        </ul>
+      </nav>
 
-        <nav class="others">
-          <h4>OTHERS</h4>
-          <ul>
-            <li>
-              <a href="#"
-                ><img class="icon" src="/pc-doc/images/definicoes.png" alt="" />
-                Settings</a
-              >
-            </li>
-            <li>
-              <a href="../help/help.html"
-                ><img class="icon" src="/pc-doc/images/help.png" alt="" />
-                Help</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <nav class="others">
+        <h4>OTHERS</h4>
+        <ul>
+          <li><a href="#"><img class="icon" src="../../images/definicoes.png"> Settings</a></li>
+          <li><a href="../help/help.html"><img class="icon" src="../../images/help.png"> Help</a></li>
+        </ul>
+      </nav>
+    </aside>
 
       <main class="main-content">
         <header class="header">
@@ -77,7 +51,7 @@
           <div class="user-profile">
             <div class="avatar-initials">R</div>
             <span>Renova</span>
-            <div class="avatar"><i class="fas fa-chevron-down"></i></div>
+            <div class="avatar"><span class="material-symbols-outlined">stat_minus_1</span></div>
           </div>
         </header>
 

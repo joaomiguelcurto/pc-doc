@@ -6,6 +6,8 @@
   <title>PCDoc - Dashboard</title>
   <link rel="stylesheet" href="../styles/help/help.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
+
 </head>
 <body>
   <div class="container">
@@ -18,9 +20,9 @@
       <nav class="menu">
         <h4>MENU</h4>
         <ul>
-          <li><a href="#"><img class="icon" src="/pc-doc/images/dashboard.png"> Dashboard</a></li>
+          <li><a href="../dashboard/dashboard.html"><img class="icon" src="/pc-doc/images/dashboard.png"> Dashboard</a></li>
           <li><a href="#"><img class="icon" src="/pc-doc/images/computer.png"> Manage Devices</a></li>
-          <li><a href="#"><img class="icon" src="/pc-doc/images/usuarios.png"> Manage Users</a></li>
+          <li><a href="../manage-users/manage-users.html"><img class="icon" src="/pc-doc/images/usuarios.png"> Manage Users</a></li>
         </ul>
       </nav>
 
@@ -37,16 +39,20 @@
     <main class="main-content">
       <!-- Cabeçalho -->
       <header class="header">
-        <div class="search-bar">
-          <input type="text" placeholder="Search PC " />
-          <span><img class="search-icon" src="../../images/procurar.png"></span>
-        </div>
-        <div class="user-profile">
-          <span>R Renova</span>
-          <div class="avatar">👤</div>
-          <!-- <span class="notification">🔔</span> -->
-        </div>
-      </header>
+          <div class="search-bar">
+            <input type="text" placeholder="Search PC " />
+            <img
+              class="search-icon"
+              src="/pc-doc/images/procurar.png"
+              alt="Search"
+            />
+          </div>
+          <div class="user-profile">
+            <div class="avatar-initials">R</div>
+            <span>Renova</span>
+            <div class="avatar"><span class="material-symbols-outlined">stat_minus_1</span></div>
+          </div>
+        </header>
 
       <!-- Secção de boas-vindas -->
       <section class="welcome">
