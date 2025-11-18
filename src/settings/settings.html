@@ -29,8 +29,8 @@
       <nav class="others">
         <h4>OTHERS</h4>
         <ul>
-          <li><a href="#"><img class="icon" src="../../images/definicoes.png"> Settings</a></li>
-          <li><a class="active" href="../help/help.html"><img class="icon" src="../../images/help.png"> Help</a></li>
+          <li><a class="active" href="../settings/settings.html"><img class="icon" src="../../images/definicoes.png"> Settings</a></li>
+          <li><a href="../help/help.html"><img class="icon" src="../../images/help.png"> Help</a></li>
         </ul>
       </nav>
     </aside>
@@ -54,66 +54,85 @@
           </div>
         </header>
 
-       <section class="account-content">
-        <h2 class="account-title">Account</h2>
-        <p class="account-subtitle">Manage computers and users for Renova</p>
+      <!-- Settings Content -->
+      <section class="settings-content">
+        <div class="settings-header">
+          <h2>Account</h2>
+          <p>Manage computers and users for Renova</p>
+        </div>
 
-        <div class="account-details-card">
-          <div class="account-field">
-            <input type="text" value="Renova" class="account-input" readonly>
-            <button class="edit-button" aria-label="Edit Account Name">
-              <span class="material-symbols-outlined edit-icon">edit</span>
+        <!-- Account Card -->
+        <div class="account-card">
+          <div class="account-banner"></div>
+          <div class="account-fields">
+            <div class="field-row">
+              <input type="text" value="Renova" class="field-input" />
+              <button class="edit-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
               </button>
-          </div>
-          <div class="account-field">
-            <input type="password" value="**********" class="account-input" readonly>
-            <button class="edit-button" aria-label="Edit Password">
-              <span class="material-symbols-outlined edit-icon">edit</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="account-actions">
-          <button class="select-pc-button">
-            Select a PC <span class="material-symbols-outlined">expand_more</span>
-            </button>
-          <button class="dashboard-button">Visit Dashboard</button>
-          <button class="delete-pc-button">Delete PC</button>
-        </div>
-
-        <div class="confirmation-section">
-          <div class="confirmation-group">
-            <h3>CONFIRMATION TO CONNECT PC</h3>
-            <div class="radio-options">
-              <label>
-                <input type="radio" name="security" value="on" checked>
-                On
-              </label>
-              <label>
-                <input type="radio" name="security" value="off">
-                Off
-              </label>
             </div>
-          </div>
-          <div class="confirmation-group browser-group">
-            <h3>NOTIFICATIONS</h3>
-            <div class="radio-options">
-              <label>
-                <input type="radio" name="browser" value="on">
-                On
-              </label>
-              <label>
-                <input type="radio" name="browser" value="off" checked>
-                Off
-              </label>
+            <div class="field-row">
+              <input type="password" value="••••••••••" class="field-input" />
+              <button class="edit-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5b21b6" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
 
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="btn-select">Select a PC <span>▼</span></button>
+          <button class="btn-link">Visit Dashboard</button>
+          <button class="btn-link delete">Delete PC</button>
+        </div>
+
+        <!-- Settings Options -->
+        <div class="settings-options">
+          <div class="option-group">
+            <h3>Confirmation to Connect PC</h3>
+            <p class="option-label">SECURITY</p>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="security" checked />
+                <span>On</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="security" />
+                <span>Off</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="option-group">
+            <h3>Notifications</h3>
+            <p class="option-label">BROWSER</p>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="notifications" />
+                <span>On</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="notifications" checked />
+                <span>Off</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delete Account Section -->
         <div class="delete-account-section">
-          <h3 class="delete-title">DELETE ACCOUNT</h3>
-          <p>Would you like to delete your PCDoc account: **Renova**?</p>
-          <p>This account contains **4 PCs**. Deleting your account will remove all of your connections and data associated with it.</p>
+          <h3>DELETE ACCOUNT</h3>
+          <p class="delete-warning">
+            Would you like to delete your PCDoc account: <strong>Renova</strong>?<br>
+            This account contains <strong>4 PCs</strong>. Deleting your account will remove all of your connections and data associated with it.
+          </p>
           <a href="#" class="delete-link">I want to delete my account</a>
         </div>
       </section>

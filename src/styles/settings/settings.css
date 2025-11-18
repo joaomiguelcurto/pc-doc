@@ -174,211 +174,221 @@ body {
   cursor: pointer;
 }
 
-.account-title {
-  font-size: 1.5rem;
+/* Settings Content */
+.settings-content {
+  max-width: 900px;
+}
+
+.settings-header {
+  margin-bottom: 24px;
+}
+
+.settings-header h2 {
+  font-size: 1.75rem;
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 4px;
 }
 
-.account-subtitle {
-  color: #6b7280;
+.settings-header p {
   font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* Account Card */
+.account-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
   margin-bottom: 24px;
 }
 
-/* Card de Detalhes da Conta (Nome e Senha) */
-.account-details-card {
-  background-color: #f7f7f9; 
-  border: 1px solid #d1d5db;
+.account-banner {
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.account-fields {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f9fafb;
   border-radius: 8px;
-  padding: 16px;
-  width: 100%;
-  max-width: 450px; 
-  margin-bottom: 20px;
-  /* Corrigido: Cor de fundo na imagem é mais escura/sólida */
-  background-color: #556080;
-  border: 1px solid #556080;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
 }
 
-.account-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  background-color: #747d9b; /* Fundo mais claro para os campos dentro do card */
-  border-radius: 4px;
-}
-
-.account-field:last-child {
-  margin-bottom: 0;
-}
-
-.account-input {
-  flex-grow: 1;
-  padding: 10px 12px;
+.field-input {
+  flex: 1;
   border: none;
-  background-color: transparent;
-  font-size: 1rem;
-  color: white; /* Corrigido: Texto branco nos campos */
-  font-weight: 500;
-  cursor: default; 
+  background: transparent;
+  font-size: 0.95rem;
+  color: #1f2937;
+  outline: none;
 }
 
-.edit-button {
-  background-color: transparent;
+.edit-btn {
+  background: none;
   border: none;
-  padding: 8px 12px;
   cursor: pointer;
-  margin-left: 8px;
-  display: flex; /* Para centralizar o ícone */
-  align-items: center;
-}
-
-.edit-icon {
-  font-size: 1.1rem;
-  color: #d1d5db; /* Corrigido: Ícone de lápis mais claro */
-  opacity: 1; 
-}
-
-/* Ações da Conta (Select PC, Dashboard, Delete PC) */
-.account-actions {
+  padding: 4px;
   display: flex;
-  gap: 10px;
-  margin-bottom: 24px;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
 }
 
-.select-pc-button, .dashboard-button, .delete-pc-button {
-  padding: 10px 18px;
+.edit-btn:hover {
+  opacity: 0.7;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.btn-select {
+  background: #4b5563;
+  color: white;
+  border: none;
+  padding: 12px 20px;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s;
   display: flex;
   align-items: center;
-  gap: 4px;
-  line-height: 1; /* Garante que o texto e o ícone fiquem alinhados */
+  gap: 8px;
+  transition: background 0.2s;
 }
 
-.select-pc-button {
-  background-color: #4f46e5;
-  color: white;
-  border: 1px solid #4f46e5;
+.btn-select:hover {
+  background: #374151;
 }
 
-.select-pc-button:hover {
-  background-color: #4338ca;
-}
-
-.select-pc-button .material-symbols-outlined {
-    font-size: 1.2rem;
-}
-
-.dashboard-button, .delete-pc-button {
-  background-color: white; /* Corrigido: Botões brancos */
-  color: #374151;
-  border: 1px solid #d1d5db; /* Corrigido: Borda sutil */
-}
-
-.dashboard-button:hover, .delete-pc-button:hover {
-  background-color: #f9fafb;
-}
-
-/* Seções de Confirmação e Notificações (Rádios) */
-.confirmation-section {
-  display: flex;
-  gap: 80px; 
-  margin-bottom: 32px;
-  padding: 16px 0; 
-}
-
-.confirmation-group h3 {
-  font-size: 0.7rem; /* Corrigido: Tamanho menor para a fonte */
-  font-weight: 500;
-  color: #9ca3af;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  letter-spacing: 0.05em; /* Adicionado para se parecer com a imagem */
-}
-
-.radio-options {
-  display: flex;
-  gap: 16px;
+.btn-link {
+  background: transparent;
+  color: #6366f1;
+  border: none;
+  padding: 12px 20px;
   font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
-.radio-options label {
+.btn-link:hover {
+  color: #4f46e5;
+}
+
+.btn-link.delete {
+  color: #ef4444;
+}
+
+.btn-link.delete:hover {
+  color: #dc2626;
+}
+
+/* Settings Options */
+.settings-options {
   display: flex;
-  align-items: center;
-  color: #374151;
-  cursor: pointer;
+  gap: 48px;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-/* Estilização Customizada dos Rádios */
-.radio-options input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 16px; /* Tamanho ajustado */
-  height: 16px;
-  border: 2px solid #9ca3af; /* Cor da borda cinza padrão */
-  border-radius: 50%;
-  margin-right: 6px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s;
+.option-group {
+  flex: 1;
 }
 
-.radio-options input[type="radio"]:checked {
-  border-color: #4f46e5; /* Borda azul ao selecionar */
-  background-color: white;
+.option-group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
 }
 
-.radio-options input[type="radio"]:checked::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 6px;
-  height: 6px;
-  background: #4f46e5; /* Ponto central azul */
-  border-radius: 50%;
-}
-
-/* DELETE ACCOUNT Section */
-.delete-account-section {
-  padding-top: 24px;
-  border-top: 1px solid #e5e7eb; 
-  margin-top: 32px; /* Adiciona espaço acima da linha */
-}
-
-.delete-title {
+.option-label {
   font-size: 0.75rem;
-  font-weight: 500;
-  color: #ef4444; 
+  font-weight: 600;
   text-transform: uppercase;
+  color: #9ca3af;
+  letter-spacing: 0.05em;
   margin-bottom: 12px;
 }
 
-.delete-account-section p {
-  font-size: 0.9rem;
-  color: #374151;
-  margin-bottom: 8px;
+.radio-group {
+  display: flex;
+  gap: 24px;
 }
 
-.delete-account-section p strong {
-  font-weight: 700;
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.radio-label input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #6366f1;
+}
+
+/* Delete Account Section */
+.delete-account-section {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.delete-account-section h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #991b1b;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.delete-warning {
+  font-size: 0.9rem;
+  color: #1f2937;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.delete-warning strong {
+  font-weight: 600;
+  color: #991b1b;
 }
 
 .delete-link {
-  color: #4f46e5;
-  text-decoration: none;
+  color: #2563eb;
   font-size: 0.9rem;
   font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .delete-link:hover {
+  color: #1d4ed8;
   text-decoration: underline;
 }
 
@@ -468,6 +478,21 @@ body {
   .features {
     grid-template-columns: 1fr;
   }
+
+  .settings-options {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-select,
+  .btn-link {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Responsividade Extra Small */
@@ -523,12 +548,5 @@ body {
   .feature-card p,
   .feature-card li {
     font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .confirmation-section {
-    flex-direction: column;
-    gap: 20px;
   }
 }
