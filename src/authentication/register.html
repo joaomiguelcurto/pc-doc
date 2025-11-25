@@ -13,35 +13,65 @@
     <div class="logo">
       <img src="../../images/Logo.png" alt="Logo" />
     </div>
+
     <div class="register-box">
       <h2>Register</h2>
+
       <form>
+        <!-- USER / COMPANY -->
+        <div class="role-selector">
+          <p class="role-label">Register as</p>
+          <div class="role-buttons">
+            <button type="button" class="role-btn active" data-role="user">
+              <span>User</span>
+            </button>
+            <button type="button" class="role-btn" data-role="company">
+              <span>Company</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- COMPANY NAME -->
+        <div class="input-group company-field" style="display: none;">
+          <label for="company-name">Company name</label>
+          <input type="text" id="company-name" />
+        </div>
+
+        <!-- USERNAME -->
         <div class="input-group">
           <label for="username">Your username</label>
-          <input type="text" id="username" placeholder="" required />
+          <input type="text" id="username" required />
         </div>
+
+        <!-- PASSWORD -->
         <div class="input-group">
           <label for="password">Your password</label>
           <div class="password-wrapper">
             <input type="password" id="password" required />
-            <span class="toggle-password">Hide</span>
+            <span class="toggle-password">Show</span>
           </div>
         </div>
+
+        <!-- CONFIRM PASSWORD -->
         <div class="input-group">
           <label for="confirm-password">Confirm password</label>
           <div class="password-wrapper">
             <input type="password" id="confirm-password" required />
-            <span class="toggle-password">Hide</span>
+            <span class="toggle-password">Show</span>
           </div>
         </div>
+
         <button type="submit" class="register-btn-disabled">Create account</button>
       </form>
+
       <p class="terms">
-        By continuing, you agree to the <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
+        By continuing, you agree to the <a href="#">Terms of use</a> and
+        <a href="#">Privacy Policy</a>.
       </p>
     </div>
   </div>
-  <script src="../scripts/authentication/register.js"></script>
+
+  <script type="module" src="../scripts/authentication/register.js"></script>
 </body>
 
 </html>
