@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PCDoc - Dashboard</title>
   <link rel="stylesheet" href="../styles/settings/settings.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
   <div class="container">
     <!-- Barra Lateral -->
@@ -21,16 +26,20 @@
       <nav class="menu">
         <h4>MENU</h4>
         <ul>
-          <li><a href="../dashboard/dashboard.html"><img class="icon" src="../../images/dashboard.png"> Dashboard</a></li>
-          <li><a href="../manage-menu/manage-menu.html"><img class="icon" src="../../images/computer.png"> Manage Devices</a></li>
-          <li><a href="../manage-users/manage-users.html"><img class="icon" src="../../images/usuarios.png"> Manage Users</a></li>
+          <li><a href="../dashboard/dashboard.html"><img class="icon" src="../../images/dashboard.png"> Dashboard</a>
+          </li>
+          <li><a href="../manage-menu/manage-menu.html"><img class="icon" src="../../images/computer.png"> Manage
+              Devices</a></li>
+          <li><a href="../manage-users/manage-users.html"><img class="icon" src="../../images/usuarios.png"> Manage
+              Users</a></li>
         </ul>
       </nav>
 
       <nav class="others">
         <h4>OTHERS</h4>
         <ul>
-          <li><a class="active" href="../settings/settings.html"><img class="icon" src="../../images/definicoes.png"> Settings</a></li>
+          <li><a class="active" href="../settings/settings.html"><img class="icon" src="../../images/definicoes.png">
+              Settings</a></li>
           <li><a href="../help/help.html"><img class="icon" src="../../images/help.png"> Help</a></li>
         </ul>
       </nav>
@@ -40,18 +49,14 @@
     <main class="main-content">
       <!-- Cabeçalho -->
       <header class="header">
-          <div class="search-bar">
-            <input type="text" placeholder="Search PC " />
-            <img
-              class="search-icon"
-              src="/pc-doc/images/procurar.png"
-              alt="Search"
-            />
-          </div>
-          <div class="user-profile">
-            <div class="avatar-initials">R</div>
-            <span>Renova</span>
-            <details class="profile-dropdown">
+        <div class="search-bar">
+          <input type="text" placeholder="Search PC " />
+          <img class="search-icon" src="/pc-doc/images/procurar.png" alt="Search" />
+        </div>
+        <div class="user-profile">
+          <div class="avatar-initials">R</div>
+          <span>Renova</span>
+          <details class="profile-dropdown">
             <summary class="avatar">
               <span class="material-symbols-outlined">stat_minus_1</span>
             </summary>
@@ -63,8 +68,8 @@
               </a>
             </div>
           </details>
-          </div>
-        </header>
+        </div>
+      </header>
 
       <!-- Settings Content -->
       <section class="settings-content">
@@ -137,14 +142,16 @@
           <h3>DELETE ACCOUNT</h3>
           <p class="delete-warning">
             Would you like to delete your PCDoc account: <strong>Renova</strong>?<br>
-            This account contains <strong>4 PCs</strong>. Deleting your account will remove all of your connections and data associated with it.
+            This account contains <strong>4 PCs</strong>. Deleting your account will remove all of your connections and
+            data associated with it.
           </p>
           <a href="#" class="delete-link">I want to delete my account</a>
         </div>
       </section>
-      
+
     </main>
   </div>
   <script src="../scripts/help/help.js"></script>
 </body>
+
 </html>
