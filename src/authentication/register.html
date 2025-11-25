@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/authentication/register.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register</title>
-  <link rel="stylesheet" href="../styles/authentication/register.css" />
-</head>
-
-<body>
-  <div class="container">
-    <div class="logo">
-      <img src="../../images/Logo.png" alt="Logo" />
-    </div>
-    <div class="register-box">
-      <h2>Register</h2>
-      <form>
-        <div class="input-group">
-          <label for="username">Your username</label>
-          <input type="text" id="username" placeholder="" required />
-        </div>
-        <div class="input-group">
-          <label for="password">Your password</label>
-          <div class="password-wrapper">
-            <input type="password" id="password" required />
-            <span class="toggle-password">Hide</span>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="../../images/Logo.png" alt="Logo" />
+      </div>
+      <div class="register-box">
+        <h2>Register</h2>
+        <form>
+          <div class="input-group">
+            <label for="username">Your username</label>
+            <input type="text" id="username" placeholder="" required />
           </div>
-        </div>
-        <div class="input-group">
-          <label for="confirm-password">Confirm password</label>
-          <div class="password-wrapper">
-            <input type="password" id="confirm-password" required />
-            <span class="toggle-password">Hide</span>
+          <div class="input-group">
+            <label for="password">Your password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" required />
+              <span class="toggle-password">Hide</span>
+            </div>
           </div>
-        </div>
-        <button type="submit" class="register-btn-disabled">Create account</button>
-      </form>
-      <p class="terms">
-        By continuing, you agree to the <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.
-      </p>
+          <div class="input-group">
+            <label for="confirm-password">Confirm password</label>
+            <div class="password-wrapper">
+              <input type="password" id="confirm-password" required />
+              <span class="toggle-password">Hide</span>
+            </div>
+          </div>
+          <button type="submit" class="register-btn-disabled">
+            Create account
+          </button>
+        </form>
+        <p class="terms">
+          By continuing, you agree to the <a href="#">Terms of use</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+      </div>
     </div>
-  </div>
-  <script src="../scripts/authentication/register.js"></script>
-</body>
-
+    <script src="../scripts/authentication/register.js"></script>
+  </body>
 </html>

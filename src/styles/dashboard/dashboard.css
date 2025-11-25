@@ -129,7 +129,7 @@ body {
 .search-bar input {
   width: 100%;
   padding: 12px 40px 12px 16px;
-  border: none; /* Remove a borda duplicada */
+  border: none;
   border-radius: 8px;
   font-size: 0.95rem;
   background: transparent;
@@ -146,15 +146,15 @@ body {
 .user-profile {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   font-size: 0.95rem;
 }
 .avatar-initials {
   /* R no círculo */
   width: 36px;
   height: 36px;
-  background: #e0e7ff; 
-  color: #4f46e5; 
+  background: #e0e7ff;
+  color: #4f46e5;
   font-weight: 600;
   border-radius: 50%;
   display: flex;
@@ -164,7 +164,7 @@ body {
 }
 .user-profile span:first-of-type {
   font-weight: 500;
-  color: #1f2937; 
+  color: #1f2937;
 }
 .avatar {
   /* Ícone de dropdown */
@@ -180,35 +180,36 @@ body {
 
 /* Dashboard Title */
 .dashboard-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 24px;
 }
 
 /* Top Row Layout */
 .top-row-grid {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr; /* Memória (maior) e Status (menor) */
-    gap: 24px;
-    margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 /* Card base style */
-.chart-card, .metric-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
-    border: 1px solid #e5e7eb;
+.chart-card,
+.metric-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
 }
 
 /* Card Header (para Memória e GPU) */
 .card-header-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 .device-info .device-name {
   font-size: 1.1rem;
@@ -217,12 +218,13 @@ body {
   margin-bottom: 4px;
 }
 .device-info .subtitle {
-  font-size: 1.4rem; /* Título principal do card */
+  font-size: 1.4rem;
   font-weight: 600;
   margin: 0 0 4px 0;
   color: #1f2937;
 }
-.device-info .description, .chart-desc {
+.device-info .description,
+.chart-desc {
   font-size: 0.8rem;
   color: #6b7280;
 }
@@ -246,41 +248,39 @@ body {
 /* Gráfico de Barras Duplas (Memory e CPU) */
 .dual-bar-chart {
   display: flex;
-  align-items: flex-end; /* Alinha os grupos de barras na base do gráfico */
+  align-items: flex-end;
   justify-content: space-between;
-  height: 150px; 
+  height: 150px;
   gap: 4px;
   position: relative;
 }
 
 .bar-group {
-    /* Usar alinhamento de linha para colocar as barras lado a lado */
-    display: flex;
-    flex: 1; /* Ocupa o espaço disponível igualmente */
-    gap: 1px; /* Espaço estreito entre as duas barras do par */
-    height: 100%; 
-    align-items: flex-end; /* Garante que as duas barras do grupo ficam alinhadas na base */
+  display: flex;
+  flex: 1;
+  gap: 1px;
+  height: 100%;
+  align-items: flex-end;
 }
 
 .bar {
-  flex: 1; /* Divide o espaço dentro do bar-group igualmente */
+  flex: 1;
   border-radius: 2px 2px 0 0;
 }
 .bar.dark {
-    background: #4f46e5; 
+  background: #4f46e5;
 }
 .bar.light {
-    background: #e0e7ff; 
+  background: #e0e7ff;
 }
 
 .x-labels {
-  /* Alinhamento ajustado para que os rótulos 01, 02, etc. fiquem no centro de cada grupo de barras */
   display: flex;
   justify-content: space-between;
-  margin-top: 4px; 
+  margin-top: 4px;
   font-size: 0.75rem;
   color: #6b7280;
-  padding: 0 4px; 
+  padding: 0 4px;
 }
 
 .legend {
@@ -299,66 +299,64 @@ body {
 .legend-color {
   width: 10px;
   height: 10px;
-  border-radius: 50%; /* Bolinhas na legenda */
+  border-radius: 50%;
 }
 
 /* Status Card */
 .status-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .status-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .status-label {
-    font-weight: 600;
-    color: #1f2937;
+  font-weight: 600;
+  color: #1f2937;
 }
 .status-online {
-    color: #6b7280;
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-top: 4px;
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 4px;
 }
 .status-icon-wrapper {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0; /* Espaço para o ícone */
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
 }
 .status-icon-wrapper .plug-icon {
-    /* Estilo do plugue verde em círculo */
-    width: 100px;
-    height: 100px;
-    border: 3px solid #10b981;
-    border-radius: 50%;
-    padding: 20px;
-    /* Ajuste para usar a imagem 'status.png'*/
+  width: 100px;
+  height: 100px;
+  border: 3px solid #10b981;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 .status-legend-standalone {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: #6b7280;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #6b7280;
 }
 .dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 4px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
 }
 .dot.online {
-    background: #10b981;
+  background: #10b981;
 }
 .dot.offline {
-    background: #ef4444;
+  background: #ef4444;
 }
 
 /* Lower Row (CPU, Discos, GPU) */
@@ -377,15 +375,15 @@ body {
   height: 100px;
 }
 .cpu-chart .x-labels {
-    /* CPU tem 9 rótulos */
-    justify-content: space-around;
-    padding: 0 10px; /* Ajuste o padding para centralizar visualmente */
+  justify-content: space-around;
+  padding: 0 10px;
 }
 
 /* Disks */
 /*.disks-card {
     /* Card padrão, altura auto */
 /*}*/
+
 .disk-item {
   display: flex;
   justify-content: space-between;
@@ -395,8 +393,8 @@ body {
   border-bottom: 1px solid #f3f4f6;
 }
 .disk-item:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
+  margin-bottom: 0;
+  border-bottom: none;
 }
 .disk-label {
   color: #6b7280;
@@ -408,7 +406,7 @@ body {
 
 /* GPU Line */
 .gpu-chart .chart-desc {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .gpu-chart .line-chart {
   height: 100px;
@@ -420,12 +418,11 @@ body {
   height: 100%;
 }
 .legend-gpu {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 .legend-gpu .legend-color {
-    background: #4f46e5;
+  background: #4f46e5;
 }
-
 
 /* Responsividade */
 @media (max-width: 1200px) {

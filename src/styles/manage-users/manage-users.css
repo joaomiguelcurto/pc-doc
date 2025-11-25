@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #f9f9fb;
   color: #333;
   line-height: 1.6;
@@ -130,7 +130,7 @@ body {
 .search-bar input {
   width: 100%;
   padding: 12px 40px 12px 16px;
-  border: none; /* Remove a borda duplicada */
+  border: none;
   border-radius: 8px;
   font-size: 0.95rem;
   background: transparent;
@@ -147,15 +147,15 @@ body {
 .user-profile {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   font-size: 0.95rem;
 }
 .avatar-initials {
   /* R no círculo */
   width: 36px;
   height: 36px;
-  background: #e0e7ff; 
-  color: #4f46e5; 
+  background: #e0e7ff;
+  color: #4f46e5;
   font-weight: 600;
   border-radius: 50%;
   display: flex;
@@ -165,7 +165,7 @@ body {
 }
 .user-profile span:first-of-type {
   font-weight: 500;
-  color: #1f2937; 
+  color: #1f2937;
 }
 .avatar {
   /* Ícone de dropdown */
@@ -256,7 +256,7 @@ body {
   background-color: white;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #e5e7eb;
   overflow-x: auto;
 }
@@ -304,11 +304,26 @@ body {
   text-transform: capitalize;
 }
 
-.status.active { background-color: #dcfce7; color: #166534; }
-.status.inactive { background-color: #f3f4f6; color: #4b5563; }
-.status.banned { background-color: #fee2e2; color: #991b1b; }
-.status.pending { background-color: #dbeafe; color: #1e40af; }
-.status.suspended { background-color: #fef3c7; color: #92400e; }
+.status.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+.status.inactive {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+.status.banned {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+.status.pending {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+.status.suspended {
+  background-color: #fef3c7;
+  color: #92400e;
+}
 
 /* Actions */
 .actions {
@@ -330,8 +345,12 @@ body {
   background-color: #f3f4f6;
 }
 
-.action-btn.edit { color: #4f46e5; }
-.action-btn.delete { color: #ef4444; }
+.action-btn.edit {
+  color: #4f46e5;
+}
+.action-btn.delete {
+  color: #ef4444;
+}
 
 /* Paginação */
 .pagination {
@@ -376,8 +395,11 @@ body {
 .modal-overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
   z-index: 1000;
@@ -394,14 +416,20 @@ body {
   padding: 32px;
   width: 440px;
   max-width: 90%;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   position: relative;
   animation: modalFadeIn 0.3s ease-out;
 }
 
 @keyframes modalFadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal h2 {
@@ -477,33 +505,65 @@ body {
 
 /* Responsividade */
 @media (max-width: 992px) {
-  .sidebar { width: 250px; }
-  .logo img { max-width: 120px; }
+  .sidebar {
+    width: 250px;
+  }
+  .logo img {
+    max-width: 120px;
+  }
 }
 
 @media (max-width: 768px) {
-  .container { flex-direction: column; }
+  .container {
+    flex-direction: column;
+  }
   .sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #e5e7eb;
     padding: 16px;
   }
-  .logo { justify-content: center; }
-  .main-content { padding: 16px; }
-  .header { flex-direction: column; align-items: stretch; }
-  .search-bar { max-width: none; }
-  .toolbar { flex-direction: column; align-items: stretch; }
-  .search-filter .search-input { width: 100%; }
-  .filters { justify-content: stretch; }
-  .filters button { flex: 1; }
+  .logo {
+    justify-content: center;
+  }
+  .main-content {
+    padding: 16px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-bar {
+    max-width: none;
+  }
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-filter .search-input {
+    width: 100%;
+  }
+  .filters {
+    justify-content: stretch;
+  }
+  .filters button {
+    flex: 1;
+  }
 }
 
 @media (max-width: 480px) {
-  .logo img { max-width: 100px; }
-  .page-title h1 { font-size: 1.35rem; }
-  .modal { padding: 24px; }
-  .modal h2 { font-size: 1.25rem; }
+  .logo img {
+    max-width: 100px;
+  }
+  .page-title h1 {
+    font-size: 1.35rem;
+  }
+  .modal {
+    padding: 24px;
+  }
+  .modal h2 {
+    font-size: 1.25rem;
+  }
 }
 
 /* Dropdown nativo sem JavaScript */
