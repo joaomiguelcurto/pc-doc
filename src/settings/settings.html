@@ -86,7 +86,7 @@
           </div>
           <div class="user-profile">
             <div class="avatar-initials">R</div>
-            <span>Renova</span>
+            <span>Utilizador</span>
             <details class="profile-dropdown">
               <summary class="avatar">
                 <span class="material-symbols-outlined">stat_minus_1</span>
@@ -106,22 +106,37 @@
         <section class="settings-content">
           <div class="settings-header">
             <h2>Account</h2>
-            <p>Manage computers and users for Renova</p>
+            <p>Manage computers and users for Utilizador</p>
           </div>
 
           <!-- Account Card -->
           <div class="account-card">
             <div class="account-banner"></div>
             <div class="account-fields">
+              <!-- Nome da Empresa / Utilizador -->
               <div class="field-row">
-                <input type="text" value="Renova" class="field-input" />
-                <button class="edit-btn">
+                <input
+                  type="text"
+                  id="display-name"
+                  class="field-input"
+                  placeholder="Carregando..."
+                  readonly
+                />
+                <button class="edit-btn" id="edit-name-btn">
                   <i class="fa-regular fa-pen-to-square"></i>
                 </button>
               </div>
+
+              <!-- Password -->
               <div class="field-row">
-                <input type="password" value="••••••••••" class="field-input" />
-                <button class="edit-btn">
+                <input
+                  type="password"
+                  id="display-password"
+                  class="field-input"
+                  value="••••••••••"
+                  readonly
+                />
+                <button class="edit-btn" id="edit-password-btn">
                   <i class="fa-regular fa-pen-to-square"></i>
                 </button>
               </div>
@@ -173,7 +188,7 @@
             <h3>DELETE ACCOUNT</h3>
             <p class="delete-warning">
               Would you like to delete your PCDoc account:
-              <strong>Renova</strong>?<br />
+              <strong>Utilizador</strong>?<br />
               This account contains <strong>4 PCs</strong>. Deleting your
               account will remove all of your connections and data associated
               with it.
@@ -183,6 +198,7 @@
         </section>
       </main>
     </div>
-    <script src="../scripts/help/help.js"></script>
+    <script type="module" src="../scripts/settings/settings.js"></script>
+
   </body>
 </html>
