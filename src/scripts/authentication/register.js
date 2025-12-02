@@ -33,25 +33,19 @@ const registerButton = document.querySelector("button[type='submit']");
 const roleButtons = document.querySelectorAll(".role-btn");
 const companyField = document.querySelector(".company-field");
 const form = document.querySelector("form");
-let selectedRole = "user"; // default
+let selectedRole = "company"; // default changed to company
 
-// Alterar categoria da conta
+// Alterar categoria da conta: Removed role switching logic.
+// Ensure 'company' is active and company field is visible, as it's the only option.
 roleButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    roleButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    selectedRole = btn.dataset.role;
-
-    // Mostrar / Esconder caixa de texto para nome da empresa
-    if (selectedRole === "company") {
-      companyField.style.display = "block";
-    } else {
-      companyField.style.display = "none";
-      companyNameInput.value = "";
-    }
-    updateButtonState();
-  });
+    btn.classList.remove("active");
 });
+const companyRoleBtn = document.querySelector(".role-btn[data-role='company']");
+if (companyRoleBtn) {
+    companyRoleBtn.classList.add("active");
+}
+companyField.style.display = "block";
+
 
 // Esconder / Mostrar password
 document.querySelectorAll(".toggle-password").forEach((toggle) => {
@@ -65,13 +59,12 @@ document.querySelectorAll(".toggle-password").forEach((toggle) => {
 
 // Estado do botao
 const updateButtonState = () => {
-  const username = usernameInput.value.trim();
+  const username = usernameInput.value.trim().toLowerCase();
   const password = passwordInput.value;
   const confirm = confirmPasswordInput.value;
 
-  // Apenas se empresa estiver selecionada
-  const companyName =
-    selectedRole === "company" ? companyNameInput?.value.trim() || "" : "test"; // Ter algum valor
+  // Company name is now always required
+  const companyName = companyNameInput?.value.trim() || "";
 
   const isValid =
     username.length >= 3 &&
@@ -95,7 +88,7 @@ form.addEventListener("submit", async (e) => {
   registerButton.textContent = "Creating...";
   registerButton.disabled = true;
 
-  const username = usernameInput.value.trim();
+  const username = usernameInput.value.trim().toLowerCase();
   const password = passwordInput.value;
   const companyName = companyNameInput?.value.trim() || "";
 
@@ -121,6 +114,7 @@ form.addEventListener("submit", async (e) => {
       return;
     }
 
+    // Only company registration logic remains
     if (selectedRole === "company") {
       const newCompanyRef = push(child(dbRef, "companies"));
       const companyId = newCompanyRef.key;
@@ -151,43 +145,8 @@ form.addEventListener("submit", async (e) => {
           isCompanyAdmin: true,
         })
       );
-    } else {
-      // Precisa de pelo menos 1 empresa
-      if (Object.keys(companies).length === 0) {
-        alert("No company exists yet. Please register a company first.");
-        resetButton();
-        return;
-      }
-
-      const companyId = Object.keys(companies)[0]; // Primeira empresa
-
-      const newUserRef = push(child(dbRef, "users"));
-      await set(newUserRef, {
-        id_user: newUserRef.key,
-        name: username.charAt(0).toUpperCase() + username.slice(1),
-        email_address: `${username}@${companies[companyId].name
-          .toLowerCase()
-          .replace(/\s+/g, "")}.local`,
-        username: username,
-        password: password,
-        status: "active",
-        creation_date: new Date().toISOString(),
-        id_company: companyId,
-      });
-
-      alert("User account created successfully!");
-      localStorage.setItem(
-        "currentUser",
-        JSON.stringify({
-          uid: newUserRef.key,
-          id_user: newUserRef.key,
-          name: username.charAt(0).toUpperCase() + username.slice(1),
-          username: username,
-          id_company: companyId,
-          isCompanyAdmin: false,
-        })
-      );
-    }
+    } 
+    // The ELSE block for user registration was removed.
 
     window.location.href = "../dashboard/dashboard.html";
   } catch (err) {

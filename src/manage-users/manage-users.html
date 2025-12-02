@@ -1,244 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PCDoc - Manage Users</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/manage-users/manage-users.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <aside class="sidebar">
-        <div class="logo">
-          <img src="../../images/LogoPcDoc.png" alt="PCDoc Logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCDoc - Manage Users</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/manage-users/manage-users.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_minus_1" />
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../../images/LogoPcDoc.png" alt="PCDoc Logo" />
+      </div>
+
+      <nav class="menu">
+        <h4>MENU</h4>
+        <ul>
+          <li>
+            <a href="../dashboard/dashboard.html"><img class="icon" src="../../images/dashboard.png" />
+              Dashboard</a>
+          </li>
+          <li>
+            <a href="../manage-menu/manage-menu.html"><img class="icon" src="../../images/computer.png" /> Manage
+              Devices</a>
+          </li>
+          <li>
+            <a class="active" href="../manage-users/manage-users.html"><img class="icon"
+                src="../../images/usuarios.png" /> Manage
+              Users</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="others">
+        <h4>OTHERS</h4>
+        <ul>
+          <li>
+            <a href="../settings/settings.html"><img class="icon" src="../../images/definicoes.png" />
+              Settings</a>
+          </li>
+          <li>
+            <a href="../help/help.html"><img class="icon" src="../../images/help.png" /> Help</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="search-bar">
+          <input type="text" placeholder="Search PC " />
+          <img class="search-icon" src="../../images/procurar.png" alt="Search" />
         </div>
+        <div class="user-profile">
+          <div class="avatar-initials">R</div>
+          <span>Renova</span>
+          <details class="profile-dropdown">
+            <summary class="avatar">
+              <span class="material-symbols-outlined">stat_minus_1</span>
+            </summary>
 
-        <nav class="menu">
-          <h4>MENU</h4>
-          <ul>
-            <li>
-              <a href="../dashboard/dashboard.html"
-                ><img class="icon" src="../../images/dashboard.png" />
-                Dashboard</a
-              >
-            </li>
-            <li>
-              <a href="../manage-menu/manage-menu.html"
-                ><img class="icon" src="../../images/computer.png" /> Manage
-                Devices</a
-              >
-            </li>
-            <li>
-              <a class="active" href="../manage-users/manage-users.html"
-                ><img class="icon" src="../../images/usuarios.png" /> Manage
-                Users</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <nav class="others">
-          <h4>OTHERS</h4>
-          <ul>
-            <li>
-              <a href="../settings/settings.html"
-                ><img class="icon" src="../../images/definicoes.png" />
-                Settings</a
-              >
-            </li>
-            <li>
-              <a href="../help/help.html"
-                ><img class="icon" src="../../images/help.png" /> Help</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      <main class="main-content">
-        <header class="header">
-          <div class="search-bar">
-            <input type="text" placeholder="Search PC " />
-            <img
-              class="search-icon"
-              src="../../images/procurar.png"
-              alt="Search"
-            />
-          </div>
-          <div class="user-profile">
-            <div class="avatar-initials">R</div>
-            <span>Renova</span>
-            <details class="profile-dropdown">
-              <summary class="avatar">
-                <span class="material-symbols-outlined">stat_minus_1</span>
-              </summary>
-
-              <div class="dropdown-menu">
-                <a href="/logout" class="dropdown-item">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                  Logout
-                </a>
-              </div>
-            </details>
-          </div>
-        </header>
-
-        <section class="page-title">
-          <h1>Manage Users</h1>
-          <p>User Management</p>
-          <p class="subtitle">
-            Manage all users in one place. Control access, assign roles, and
-            monitor activity across your platform.
-          </p>
-        </section>
-
-        <!-- Barra de ferramentas + Tabela -->
-        <div class="toolbar">
-          <div class="search-filter">
-            <input type="text" placeholder="Search" class="search-input" />
-          </div>
-          <div class="filters">
-            <button class="filter-btn">Status <span>▼</span></button>
-            <button class="export-btn">Export</button>
-            <button class="add-user-btn">+ Add User</button>
-          </div>
+            <div class="dropdown-menu">
+              <a href="/logout" class="dropdown-item">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+              </a>
+            </div>
+          </details>
         </div>
+      </header>
 
-        <!-- Tabela de Utilizadores -->
-        <div class="table-container">
-          <table class="users-table">
-            <thead>
-              <tr>
-                <th><input type="checkbox" /></th>
-                <th>Full Name <span>▼</span></th>
-                <th>Email <span>▼</span></th>
-                <th>Username <span>▼</span></th>
-                <th>Status <span>▼</span></th>
-                <th>Actions <span>▼</span></th>
-              </tr>
-            </thead>
-            <tbody id="users-tbody">
-              <!-- Dados a adicionar (JS) -->
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>John Smith</td>
-                <td>john.smith@gmail.com</td>
-                <td>jony777</td>
-                <td><span class="status active">Active</span></td>
-                <td class="actions">
-                  <button class="action-btn edit">Edit</button>
-                  <button class="action-btn delete">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Olivia Bennett</td>
-                <td>ollyben@gmail.com</td>
-                <td>olly659</td>
-                <td><span class="status inactive">Inactive</span></td>
-                <td class="actions">
-                  <button class="action-btn edit">Edit</button>
-                  <button class="action-btn delete">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Daniel Warren</td>
-                <td>dwarren3@gmail.com</td>
-                <td>dwarren3</td>
-                <td><span class="status banned">Banned</span></td>
-                <td class="actions">
-                  <button class="action-btn edit">Edit</button>
-                  <button class="action-btn delete">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Chloe Hayes</td>
-                <td>chloehyh@gmail.com</td>
-                <td>chloehh</td>
-                <td><span class="status pending">Pending</span></td>
-                <td class="actions">
-                  <button class="action-btn edit">Edit</button>
-                  <button class="action-btn delete">Delete</button>
-                </td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>Marcus Reed</td>
-                <td>reeds777@gmail.com</td>
-                <td>reeds7</td>
-                <td><span class="status suspended">Suspended</span></td>
-                <td class="actions">
-                  <button class="action-btn edit">Edit</button>
-                  <button class="action-btn delete">Delete</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <section class="page-title">
+        <h1>Manage Users</h1>
+        <p>User Management</p>
+        <p class="subtitle">
+          Manage all users in one place. Control access, assign roles, and
+          monitor activity across your platform.
+        </p>
+      </section>
+
+      <!-- Barra de ferramentas + Tabela -->
+      <div class="toolbar">
+        <div class="search-filter">
+          <input type="text" placeholder="Search" class="search-input" />
         </div>
-
-        <!-- Paginação -->
-        <!-- TODO: Necessário alteraçao de como funciona e da forma como vai ser mostrado -->
-        <div class="pagination">
-          <span>Rows per page</span>
-          <select>
-            <option>10</option>
-          </select>
-          <span>of 140 rows</span>
-          <div class="page-numbers">
-            <button>&lt;</button>
-            <button>&lt;</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <span>...</span>
-            <button>10</button>
-            <button>&gt;</button>
-            <button>&gt;</button>
-          </div>
+        <div class="filters">
+          <button class="export-btn">Export</button>
+          <button class="add-user-btn" id="addUserBtn">
+            + Add New User
+          </button>
         </div>
+      </div>
 
-        <!-- Modal Add User (escondido) -->
-        <div class="modal-overlay" id="addUserModal">
-          <div class="modal">
-            <h2>Add New User</h2>
-            <form id="addUserForm">
-              <label>User Name</label>
-              <input type="text" placeholder="Enter your Username" required />
+      <!-- Tabela de Utilizadores -->
+      <div class="table-container">
+        <table class="users-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox" /></th>
+              <th>Full Name <span>▼</span></th>
+              <th>Email <span>▼</span></th>
+              <th>Username <span>▼</span></th>
+              <th>Status <span>▼</span></th>
+              <th>Actions <span>▼</span></th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody">
+            <!-- Dados a adicionar (JS) -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>John Smith</td>
+              <td>john.smith@gmail.com</td>
+              <td>jony777</td>
+              <td><span class="status active">Active</span></td>
+              <td class="actions">
+                <button class="action-btn edit">Edit</button>
+                <button class="action-btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-              <label style="margin-top: 16px">Email</label>
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                required
-              />
-
-              <div class="modal-alert" id="modalAlert"></div>
-
-              <button type="submit" class="submit-btn">Submit →</button>
-            </form>
-          </div>
+      <!-- Paginação -->
+      <!-- TODO: Necessário alteraçao de como funciona e da forma como vai ser mostrado -->
+      <div class="pagination">
+        <span>Rows per page</span>
+        <select>
+          <option>10</option>
+        </select>
+        <span>of 140 rows</span>
+        <div class="page-numbers">
+          <button>&lt;</button>
+          <button>&lt;</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <span>...</span>
+          <button>10</button>
+          <button>&gt;</button>
+          <button>&gt;</button>
         </div>
-      </main>
-    </div>
+      </div>
 
-    <script src="../scripts/manage-users/manage-users.js"></script>
-  </body>
+      <!-- Modal Add User (escondido) -->
+      <div class="modal-overlay" id="addUserModal">
+        <div class="modal">
+          <h2>Add New User</h2>
+          <form id="addUserForm">
+
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter the user's Full Name" required />
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter the user's Username" required />
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Set a secure password" required />
+
+            <div class="modal-alert" id="modalAlert"></div>
+
+            <button type="submit" class="submit-btn">Submit →</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-overlay" id="editUserModal">
+        <div class="modal">
+          <h2>Edit User</h2>
+          <form id="editUserForm">
+            <input type="hidden" id="editUserId" name="userId" />
+
+            <label>Full Name</label>
+            <input type="text" id="editFullName" name="name" required />
+
+            <label style="margin-top: 16px">Username</label>
+            <input type="text" id="editUsername" name="username" required readonly />
+            <p style="font-size: 0.8rem; color: #6b7280; margin-top: -12px; margin-bottom: 12px;">Username cannot be
+              changed.</p>
+
+            <label style="margin-top: 16px">Status</label>
+            <select id="editStatus" name="status">
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+              <option value="pending">Pending</option>
+              <option value="suspended">Suspended</option>
+              <option value="banned">Banned</option>
+            </select>
+
+            <div class="modal-alert" id="editModalAlert"></div>
+
+            <button type="submit" class="submit-btn">Save Changes →</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/manage-users/manage-users.js"></script>
+</body>
+
 </html>
