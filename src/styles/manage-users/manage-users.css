@@ -623,3 +623,47 @@ body {
   font-size: 18px;
   color: #6b7280;
 }
+
+#editStatus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #374151;
+  cursor: pointer;
+  padding-right: 30px; 
+}
+
+#editStatus:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+  outline: none;
+}
+
+#editUserForm > label:nth-of-type(3) {
+    position: relative;
+    display: block;
+}
+
+#editUserForm > label:nth-of-type(3)::after {
+    content: "▼";
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 0.7rem;
+    color: #6b7280;
+    pointer-events: none;
+}
+
+#editStatus option {
+  padding: 10px;
+  background-color: #f9fafb;
+  color: #111827;
+}
