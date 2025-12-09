@@ -1,187 +1,241 @@
 {
   "companies": {
+    "-OfTVBXRLtGzvKNOAdVN": {
+      "confirm_connect": false,
+      "connection_code": "R8KWD9",
+      "creation_date": "2025-12-02T09:59:34.059Z",
+      "id_company": "-OfTVBXRLtGzvKNOAdVN",
+      "last_update": "2025-12-02T09:59:34.059Z",
+      "name": "Mercedes",
+      "password": "123123123",
+      "username": "mercedes"
+    },
+    "-OfTkmXxkdC_YfCaHUcQ": {
+      "confirm_connect": false,
+      "connection_code": "IIQOUT",
+      "creation_date": "2025-12-02T11:12:03.561Z",
+      "id_company": "-OfTkmXxkdC_YfCaHUcQ",
+      "last_update": "2025-12-02T11:12:03.561Z",
+      "name": "Lenovo",
+      "password": "123123123",
+      "username": "lenovo"
+    },
+    "-OfTmfLw-Unil2kxBNma": {
+      "confirm_connect": false,
+      "connection_code": "JXGAAJ",
+      "creation_date": "2025-12-02T11:20:18.376Z",
+      "id_company": "-OfTmfLw-Unil2kxBNma",
+      "last_update": "2025-12-02T11:20:18.376Z",
+      "name": "MSI",
+      "password": "123123123",
+      "username": "msi"
+    },
     "company1": {
-      "id_company": "company1",
-      "name": "Empresa1",
-      "username": "admin_empresa1",
-      "password": "senha123",
-      "creation_date": "2025-09-30T14:28:00Z",
-      "confirm_connect": true,
-      "connection_code": "ABC123XYZ",
-      "last_update": "2025-09-30T14:28:00Z",
       "computers": {
         "pc001": {
-          "id_computer": "pc001",
-          "name": "Desktop-01",
           "connection_code": "ABC123XYZ",
-          "last_update": "2025-09-30T14:28:00Z",
-          "status": "online",
-          "id_company": "company1",
           "cpu": {
-            "id_cpu": "cpu_pc001",
-            "model": "Intel Core i7-12700K",
-            "usage": 45.2,
             "data": {
               "2025-09-30T14:00:00Z": 42.1,
               "2025-09-30T14:15:00Z": 45.2,
               "2025-09-30T14:28:00Z": 45.2
             },
-            "id_computer": "pc001"
-          },
-          "gpus": [
-            {
-              "id_gpu": "gpu_pc001_1",
-              "model": "NVIDIA RTX 3080",
-              "usage": 60,
-              "data": {
-                "2025-09-30T14:00:00Z": 55,
-                "2025-09-30T14:15:00Z": 58,
-                "2025-09-30T14:28:00Z": 60
-              },
-              "id_computer": "pc001"
-            }
-          ],
-          "ram": {
-            "id_ram": "ram_pc001",
-            "capacity": 32,
-            "usage": 12.5,
-            "data": {
-              "2025-09-30T14:00:00Z": 11.8,
-              "2025-09-30T14:15:00Z": 12.3,
-              "2025-09-30T14:28:00Z": 12.5
-            },
-            "id_computer": "pc001"
+            "id_computer": "pc001",
+            "id_cpu": "cpu_pc001",
+            "model": "Intel Core i7-12700K",
+            "usage": 45.2
           },
           "disks": [
             {
-              "id_disk": "disk_pc001_1",
-              "name": "SSD_C",
               "capacity": 512,
-              "usage": 80,
               "data": {
                 "2025-09-30T14:00:00Z": 75,
                 "2025-09-30T14:15:00Z": 78,
                 "2025-09-30T14:28:00Z": 80
               },
-              "id_computer": "pc001"
+              "id_computer": "pc001",
+              "id_disk": "disk_pc001_1",
+              "name": "SSD_C",
+              "usage": 80
             },
             {
-              "id_disk": "disk_pc001_2",
-              "name": "HDD_D",
               "capacity": 2000,
-              "usage": 20,
               "data": {
                 "2025-09-30T14:00:00Z": 18,
                 "2025-09-30T14:15:00Z": 19,
                 "2025-09-30T14:28:00Z": 20
               },
-              "id_computer": "pc001"
+              "id_computer": "pc001",
+              "id_disk": "disk_pc001_2",
+              "name": "HDD_D",
+              "usage": 20
             }
-          ]
-        },
-
-        "pc002": {
-          "id_computer": "pc002",
-          "name": "Laptop-01",
-          "connection_code": "DEF456UVW",
-          "last_update": "2025-09-30T14:28:00Z",
-          "status": "online",
+          ],
+          "gpus": [
+            {
+              "data": {
+                "2025-09-30T14:00:00Z": 55,
+                "2025-09-30T14:15:00Z": 58,
+                "2025-09-30T14:28:00Z": 60
+              },
+              "id_computer": "pc001",
+              "id_gpu": "gpu_pc001_1",
+              "model": "NVIDIA RTX 3080",
+              "usage": 60
+            }
+          ],
           "id_company": "company1",
+          "id_computer": "pc001",
+          "last_update": "2025-09-30T14:28:00Z",
+          "name": "Desktop-01",
+          "ram": {
+            "capacity": 32,
+            "data": {
+              "2025-09-30T14:00:00Z": 11.8,
+              "2025-09-30T14:15:00Z": 12.3,
+              "2025-09-30T14:28:00Z": 12.5
+            },
+            "id_computer": "pc001",
+            "id_ram": "ram_pc001",
+            "usage": 12.5
+          },
+          "status": "online"
+        },
+        "pc002": {
+          "connection_code": "DEF456UVW",
           "cpu": {
-            "id_cpu": "cpu_pc002",
-            "model": "AMD Ryzen 5 5600U",
-            "usage": 30,
             "data": {
               "2025-09-30T14:00:00Z": 28,
               "2025-09-30T14:15:00Z": 29,
               "2025-09-30T14:28:00Z": 30
             },
-            "id_computer": "pc002"
-          },
-          "gpus": [
-            {
-              "id_gpu": "gpu_pc002_1",
-              "model": "Integrated AMD Radeon",
-              "usage": 15,
-              "data": {
-                "2025-09-30T14:00:00Z": 12,
-                "2025-09-30T14:15:00Z": 14,
-                "2025-09-30T14:28:00Z": 15
-              },
-              "id_computer": "pc002"
-            }
-          ],
-          "ram": {
-            "id_ram": "ram_pc002",
-            "capacity": 16,
-            "usage": 8,
-            "data": {
-              "2025-09-30T14:00:00Z": 7.5,
-              "2025-09-30T14:15:00Z": 7.8,
-              "2025-09-30T14:28:00Z": 8
-            },
-            "id_computer": "pc002"
+            "id_computer": "pc002",
+            "id_cpu": "cpu_pc002",
+            "model": "AMD Ryzen 5 5600U",
+            "usage": 30
           },
           "disks": [
             {
-              "id_disk": "disk_pc002_1",
-              "name": "SSD_C",
               "capacity": 256,
-              "usage": 50,
               "data": {
                 "2025-09-30T14:00:00Z": 45,
                 "2025-09-30T14:15:00Z": 48,
                 "2025-09-30T14:28:00Z": 50
               },
-              "id_computer": "pc002"
+              "id_computer": "pc002",
+              "id_disk": "disk_pc002_1",
+              "name": "SSD_C",
+              "usage": 50
             }
-          ]
+          ],
+          "gpus": [
+            {
+              "data": {
+                "2025-09-30T14:00:00Z": 12,
+                "2025-09-30T14:15:00Z": 14,
+                "2025-09-30T14:28:00Z": 15
+              },
+              "id_computer": "pc002",
+              "id_gpu": "gpu_pc002_1",
+              "model": "Integrated AMD Radeon",
+              "usage": 15
+            }
+          ],
+          "id_company": "company1",
+          "id_computer": "pc002",
+          "last_update": "2025-09-30T14:28:00Z",
+          "name": "Laptop-01",
+          "ram": {
+            "capacity": 16,
+            "data": {
+              "2025-09-30T14:00:00Z": 7.5,
+              "2025-09-30T14:15:00Z": 7.8,
+              "2025-09-30T14:28:00Z": 8
+            },
+            "id_computer": "pc002",
+            "id_ram": "ram_pc002",
+            "usage": 8
+          },
+          "status": "online"
         }
-      }
+      },
+      "confirm_connect": true,
+      "connection_code": "ABC123XYZ",
+      "creation_date": "2025-09-30T14:28:00Z",
+      "id_company": "company1",
+      "last_update": "2025-09-30T14:28:00Z",
+      "name": "Empresa1",
+      "password": "senha123",
+      "username": "admin_empresa1"
     }
   },
-
-  "users": {
-    "user_uid_1": {
-      "id_user": "user_uid_1",
-      "name": "Utilizador Exemplo 1",
-      "email_address": "user1@empresa1.com",
-      "username": "user1_empresa1",
-      "password": "hashed_password_1",
-      "status": "active",
-      "creation_date": "2025-10-21T10:00:00Z",
-      "id_company": "company1"
-    },
-    "user_uid_2": {
-      "id_user": "user_uid_2",
-      "name": "Utilizador Exemplo 2",
-      "email_address": "user2@empresa1.com",
-      "username": "user2_empresa1",
-      "password": "hashed_password_2",
-      "status": "inactive",
-      "creation_date": "2025-10-21T10:01:00Z",
-      "id_company": "company1"
-    }
-  },
-
   "user_permissions": {
     "perm_1": {
-      "id_user_permission": "perm_1",
-      "id_user": "user_uid_1",
+      "id_company": "company1",
       "id_computer": "pc001",
-      "id_company": "company1"
+      "id_user": "user_uid_1",
+      "id_user_permission": "perm_1"
     },
     "perm_2": {
-      "id_user_permission": "perm_2",
-      "id_user": "user_uid_1",
+      "id_company": "company1",
       "id_computer": "pc002",
-      "id_company": "company1"
+      "id_user": "user_uid_1",
+      "id_user_permission": "perm_2"
     },
     "perm_3": {
-      "id_user_permission": "perm_3",
-      "id_user": "user_uid_2",
+      "id_company": "company1",
       "id_computer": "pc001",
-      "id_company": "company1"
+      "id_user": "user_uid_2",
+      "id_user_permission": "perm_3"
+    }
+  },
+  "users": {
+    "-OfTV0hmZljQe4aoioMZ": {
+      "creation_date": "2025-12-02T09:58:49.724Z",
+      "email_address": "teste@mercedes.local",
+      "id_company": "-OfTVBXRLtGzvKNOAdVN",
+      "id_user": "-OfTV0hmZljQe4aoioMZ",
+      "last_update": "2025-12-02T10:54:04.673Z",
+      "name": "Teste",
+      "password": "123123123",
+      "status": "active",
+      "username": "Teste"
+    },
+    "-OfTbuV6-AVNQNE0o6mx": {
+      "creation_date": "2025-12-02T10:33:16.413Z",
+      "email_address": "lourenço@mercedes.local",
+      "id_company": "-OfTVBXRLtGzvKNOAdVN",
+      "id_user": "-OfTbuV6-AVNQNE0o6mx",
+      "name": "Miguel",
+      "password": "123456",
+      "status": "active",
+      "username": "lourenço"
+    },
+    "-OfTvcurJkbNecyWrI1a": {
+      "creation_date": "2025-12-02T11:59:27.614Z",
+      "email_address": "lourenco@mercedes.local",
+      "id_company": "-OfTVBXRLtGzvKNOAdVN",
+      "id_user": "-OfTvcurJkbNecyWrI1a",
+      "name": "lourenco",
+      "password": "123123",
+      "status": "active",
+      "username": "lourenco"
+    }
+  },
+  "computadores": {
+    "pc001": {
+      "id_computer": "pc001",
+      "name": "Desktop-01",
+      "status": "online",
+      "last_update": "2025-09-30T14:28:00Z",
+      "connection_code": "ABC123XYZ"
+    },
+    "pc002": {
+      "id_computer": "pc002",
+      "name": "Laptop-01",
+      "status": "online",
+      "last_update": "2025-09-30T14:28:00Z",
+      "connection_code": "DEF456UVW"
     }
   }
 }
