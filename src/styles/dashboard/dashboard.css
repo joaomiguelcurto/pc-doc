@@ -510,3 +510,43 @@ body {
   font-size: 18px;
   color: #6b7280;
 }
+
+/* Barras de progresso nos discos */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+/* Melhorar visual das barras duplas */
+.dual-bar-chart {
+  padding: 0 8px;
+  gap: 8px !important;
+}
+
+.bar-group {
+  gap: 3px !important;
+}
+
+.bar {
+  border-radius: 4px !important;
+  transition: height 0.6s ease;
+}
+
+.bar.dark { background: #4f46e5; }
+.bar.light { background: #c4b5fd; opacity: 0.7; }
+
+/* Animação suave no gráfico de linha */
+.gpu-chart polyline {
+  transition: all 0.8s ease;
+}
