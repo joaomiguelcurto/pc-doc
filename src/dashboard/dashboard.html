@@ -33,22 +33,20 @@
           <h4>MENU</h4>
           <ul>
             <li>
-              <a class="active" href="../dashboard/dashboard.html"
-                ><img class="icon" src="../../images/dashboard.png" />
-                Dashboard</a
-              >
+              <a class="active" href="../dashboard/dashboard.html">
+                <img class="icon" src="../../images/dashboard.png" />
+                Dashboard
+              </a>
             </li>
             <li>
-              <a href="../manage-menu/manage-menu.html"
-                ><img class="icon" src="../../images/computer.png" /> Manage
-                Devices</a
-              >
+              <a href="../manage-menu/manage-menu.html">
+                <img class="icon" src="../../images/computer.png" /> Manage Devices
+              </a>
             </li>
             <li>
-              <a href="../manage-users/manage-users.html"
-                ><img class="icon" src="../../images/usuarios.png" /> Manage
-                Users</a
-              >
+              <a href="../manage-users/manage-users.html">
+                <img class="icon" src="../../images/usuarios.png" /> Manage Users
+              </a>
             </li>
           </ul>
         </nav>
@@ -57,15 +55,15 @@
           <h4>OTHERS</h4>
           <ul>
             <li>
-              <a href="../settings/settings.html"
-                ><img class="icon" src="../../images/definicoes.png" />
-                Settings</a
-              >
+              <a href="../settings/settings.html">
+                <img class="icon" src="../../images/definicoes.png" />
+                Settings
+              </a>
             </li>
             <li>
-              <a href="../help/help.html"
-                ><img class="icon" src="../../images/help.png" /> Help</a
-              >
+              <a href="../help/help.html">
+                <img class="icon" src="../../images/help.png" /> Help
+              </a>
             </li>
           </ul>
         </nav>
@@ -75,11 +73,7 @@
         <header class="header">
           <div class="search-bar">
             <input type="text" placeholder="Search PC " />
-            <img
-              class="search-icon"
-              src="../../images/procurar.png"
-              alt="Search"
-            />
+            <img class="search-icon" src="../../images/procurar.png" alt="Search" />
           </div>
           <div class="user-profile">
             <div class="avatar-initials"></div>
@@ -88,7 +82,6 @@
               <summary class="avatar">
                 <span class="material-symbols-outlined">stat_minus_1</span>
               </summary>
-
               <div class="dropdown-menu">
                 <a href="/logout" class="dropdown-item">
                   <i class="fa-solid fa-arrow-right-from-bracket"></i>
@@ -102,74 +95,25 @@
         <section class="dashboard">
           <h1 class="dashboard-title">Dashboard</h1>
 
+          <!-- TOP ROW -->
           <div class="top-row-grid">
+            <!-- MEMORY CARD -->
             <div class="chart-card memory-chart">
               <div class="card-header-info">
                 <div class="device-info">
                   <h2 class="device-name">PC0-01</h2>
                   <p class="subtitle">Memória</p>
-                  <p class="description">
-                    Memory usage and allocation overview.
-                  </p>
+                  <p class="description">Memory usage and allocation overview.</p>
                 </div>
                 <button class="btn-outline">View Report</button>
               </div>
 
-              <div class="chart-wrapper dual-bar-chart">
-                <div class="bar-group">
-                  <div class="bar light" style="height: 65%"></div>
-                  <div class="bar dark" style="height: 75%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 55%"></div>
-                  <div class="bar dark" style="height: 80%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 85%"></div>
-                  <div class="bar dark" style="height: 90%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 78%"></div>
-                  <div class="bar dark" style="height: 60%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 70%"></div>
-                  <div class="bar dark" style="height: 82%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 88%"></div>
-                  <div class="bar dark" style="height: 50%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 65%"></div>
-                  <div class="bar dark" style="height: 75%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 55%"></div>
-                  <div class="bar dark" style="height: 80%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 85%"></div>
-                  <div class="bar dark" style="height: 90%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 78%"></div>
-                  <div class="bar dark" style="height: 60%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 70%"></div>
-                  <div class="bar dark" style="height: 82%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 88%"></div>
-                  <div class="bar dark" style="height: 50%"></div>
-                </div>
-              </div>
+              <div class="chart-wrapper dual-bar-chart"></div>
 
               <div class="x-labels">
-                <span>01</span><span>02</span><span>03</span><span>04</span
-                ><span>05</span><span>06</span><span>07</span><span>08</span
-                ><span>09</span><span>10</span><span>11</span><span>12</span>
+                <span>01</span><span>02</span><span>03</span><span>04</span>
+                <span>05</span><span>06</span><span>07</span><span>08</span>
+                <span>09</span><span>10</span><span>11</span><span>12</span>
               </div>
               <div class="legend">
                 <div class="legend-item">
@@ -183,19 +127,15 @@
               </div>
             </div>
 
+            <!-- STATUS CARD -->
             <div class="chart-card status-card">
               <div class="status-header">
                 <p class="status-label">Status</p>
-                <button class="btn-outline">View Report</button>
               </div>
               <p class="status-online">Real time.</p>
 
               <div class="status-icon-wrapper">
-                <img
-                  src="../../images/status.png"
-                  alt="Status icon"
-                  class="plug-icon"
-                />
+                <img src="../../images/status.png" alt="Status icon" class="plug-icon" />
               </div>
 
               <div class="status-legend-standalone">
@@ -209,70 +149,34 @@
             </div>
           </div>
 
+          <!-- LOWER ROW -->
           <div class="lower-row">
+            <!-- CPU CARD -->
             <div class="chart-card cpu-chart">
-              <h3 class="chart-title">CPU</h3>
-              <p class="chart-desc">
-                Processor usage and performance in real time.
-              </p>
-              <div class="chart-wrapper dual-bar-chart">
-                <div class="bar-group">
-                  <div class="bar light" style="height: 60%"></div>
-                  <div class="bar dark" style="height: 70%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 50%"></div>
-                  <div class="bar dark" style="height: 80%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 90%"></div>
-                  <div class="bar dark" style="height: 75%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 85%"></div>
-                  <div class="bar dark" style="height: 55%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 65%"></div>
-                  <div class="bar dark" style="height: 75%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 60%"></div>
-                  <div class="bar dark" style="height: 70%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 50%"></div>
-                  <div class="bar dark" style="height: 80%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 90%"></div>
-                  <div class="bar dark" style="height: 75%"></div>
-                </div>
-                <div class="bar-group">
-                  <div class="bar light" style="height: 85%"></div>
-                  <div class="bar dark" style="height: 55%"></div>
-                </div>
+              <div class="card-header-info" style="margin-bottom: 12px; justify-content: space-between;">
+                <h3 class="chart-title">CPU</h3>
+                <button class="btn-outline">View Report</button>
               </div>
+              <p class="chart-desc">Processor usage and performance in real time.</p>
+              <div class="chart-wrapper dual-bar-chart"></div>
               <div class="x-labels">
-                <span>01</span><span>02</span><span>03</span><span>04</span
-                ><span>05</span><span>06</span><span>07</span><span>08</span
-                ><span>09</span>
+                <span>01</span><span>02</span><span>03</span><span>04</span>
+                <span>05</span><span>06</span><span>07</span><span>08</span>
+                <span>09</span>
               </div>
             </div>
 
+            <!-- DISKS CARD -->
             <div class="metric-card disks-card">
-              <h3 class="chart-title">Discos</h3>
-              <p class="chart-desc">Storage space available per unit.</p>
-              <div class="disk-item">
-                <span class="disk-label">Disk 0 (C:)</span>
-                <span class="disk-value">211.4GB/512GB</span>
+              <div class="card-header-info" style="margin-bottom: 12px; justify-content: space-between;">
+                <h3 class="chart-title">Discos</h3>
+                <button class="btn-outline">View Report</button>
               </div>
-              <div class="disk-item">
-                <span class="disk-label">Disk 1 (D:)</span>
-                <span class="disk-value">760.1GB/1024GB</span>
-              </div>
+              <p class="chart-desc">Armazenamento disponível por unidade.</p>
+              <!-- Os discos sao inseridos aqui pelo JS -->
             </div>
 
+            <!-- GPU CARD -->
             <div class="chart-card gpu-chart">
               <div class="card-header-info">
                 <h3 class="chart-title">GPU</h3>
@@ -281,17 +185,12 @@
               <p class="chart-desc">GPU usage and performance in real time.</p>
               <div class="line-chart">
                 <svg viewBox="0 0 300 120" preserveAspectRatio="none">
-                  <polyline
-                    fill="none"
-                    stroke="#4f46e5"
-                    stroke-width="2"
-                    points="0,80 60,40 120,60 180,30 240,90 300,60"
-                  />
+                  <!-- polyline vai ser criado dinamicamente -->
                 </svg>
               </div>
               <div class="x-labels">
-                <span>01</span><span>02</span><span>03</span><span>04</span
-                ><span>05</span><span>06</span>
+                <span>01</span><span>02</span><span>03</span><span>04</span>
+                <span>05</span><span>06</span>
               </div>
               <div class="legend-gpu">
                 <div class="legend-item">
@@ -304,6 +203,7 @@
         </section>
       </main>
     </div>
+
     <script type="module" src="../scripts/dashboard/dashboard.js"></script>
   </body>
 </html>
